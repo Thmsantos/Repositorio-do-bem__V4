@@ -1,0 +1,58 @@
+ALIMENTOS
+-------------------------
+POST - localhost:5555/saveAlimento (adiciona produto)
+{
+    "nome": "arroz",
+    "peso": "5kg",
+    "validade": "20.05.2024",
+    "quantidade": "1",
+    "idDoador": "5",
+    "emailDoador": "doador@email.com"
+}
+
+
+GET - localhost:5555/getAlimento/{id} (puxa por id)
+
+PUT - localhost:5555/updateAlimento/{id} (atualiza produto)
+{
+    "nome": "arroz editado",
+    "peso": "5kg",
+    "validade": "20.05.2024",
+    "quantidade": "1",
+    "idDoador": "5",
+    "emailDoador": "doador@email.com"
+}
+
+DELETE - localhost:5555/deleteAlimento/{id} (deleta produto)
+
+GET - localhost:5555/getAllAlimentos (puxa todos)
+
+
+AUTENTICAÇÃO USER
+-----------------------------
+POST - localhost:5555/saveUsuario (adiciona user)
+
+{
+    "cnpj": "4356785324565",
+    "nomeEmpresa": "Empresa_X",
+    "cep": "33425432",
+    "email": "empresaX@email.com",
+    "senha": "1233456"
+}
+
+GET - localhost:5555/getUsuario/{id} (puxa por id)
+
+PUT - localhost:5555/updateUsuario/{id} (atualiza user)
+
+{
+    "cnpj": "4356785324654",
+    "nomeEmpresa": "Empresa_T",
+    "cep": "33425432 atualizado",
+    "email": "empresaX@email.com",
+    "senha": "1233456"
+}
+
+DELETE - localhost:5555/deleteUsuario/{id} (deleta user por id)
+
+GET - localhost:5555/getAllUsuarios (puxa todos)
+
