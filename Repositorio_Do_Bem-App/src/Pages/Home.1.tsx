@@ -1,8 +1,0 @@
-function Home() {
-
-    return (
-
-
-    );
-
-}
