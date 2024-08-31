@@ -1,13 +1,17 @@
+import './header.css'
+
 export default function Header() {
   return (
     <>
-        <div>
-            <img src="./assets/images/logo.png" alt="Logo"></img>
-            <h1>Repositório do bem</h1>
-        </div>
-        <div>
-            <button>Sou uma empresa</button>
-        </div>
+      <div id="header">
+          <div id="esquerda">
+              <img src="./src/assets/images/logo.png" alt="Logo"></img>
+              <p>Repositório do bem</p>
+          </div>
+          <div id="direita">
+              <button>Sou uma empresa</button>
+          </div>
+      </div>
     </>    
     
   )

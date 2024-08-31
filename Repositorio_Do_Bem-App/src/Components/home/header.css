@@ -1,0 +1,19 @@
+#header {
+    width: 100%;
+    height: 10%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position: fixed;
+    top: 0;
+}
+
+#esquerda{
+    display:flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+
+#direita{
+    margin-right: 40px;
+}
