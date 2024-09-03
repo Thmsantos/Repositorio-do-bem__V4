@@ -1,0 +1,82 @@
+
+/*Estilizando o Componente */
+body{
+
+    /* Aplica fundo azul ao corpo inteiro da página */
+    background-color: #3A2E92; /* Azul escuro */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.navbar {
+
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    background-color: #112468; /* Cor de fundo amarela */
+    width: 100%; /* Ocupa toda a largura da tela */
+    position: fixed; /* Mantém a barra fixa no topo da página */
+    top: 0; /* Alinha a barra no topo da tela */
+    left: 0; /* Começa do lado esquerdo */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    padding: 10px;
+}
+/* Estilo para as imagens na barra de navegação */
+.navbar-home {
+    height:34 px; /* Ajuste conforme necessário */ 
+    color: white;
+    
+    
+  
+}
+.navbar-user {
+    height:12 px; /* Ajuste conforme necessário */ 
+    margin-left: 1420px;
+    height: 40px;
+    
+
+}
+
+#menu-list{
+    display: none;
+}
+
+
+button {
+    margin-top: 30px;
+    padding: 20px 20px;
+    background-color:white;
+    color: #3A2E92;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+}
+.generate-report {
+    margin-right: 1000px; /* Espaço maior para separar do grupo de botões */
+    padding: 10px 20px;
+    display: flex;
+    border-radius: 20px;
+   
+   
+
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espaço entre os botões */
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: white;
+    
+}
