@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.quem-somos {
+    background-color: #0D2783;
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+
+}
+
+.quem-somos-titulo {
+    margin-left: 300px;
+    font-family: 'Poppins';
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 60px;
+    grid-column: 1;
+}
+
+.quem-somos-texto {
+    font-family: 'Poppins';
+    color: #ffffff;
+    font-weight: 400;
+    grid-column: 3;
+    font-size: 20px;
+    margin-right: 140px;
+    margin-top: 60px;
+}
