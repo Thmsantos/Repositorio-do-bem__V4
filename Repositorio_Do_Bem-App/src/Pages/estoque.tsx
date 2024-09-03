@@ -1,8 +1,14 @@
-import Header from "../Components/estoque/header";
+import Navebar from "../Components/estoque/navebar";
+import BarraDePesquisa from "../Components/estoque/barraDePesquisa";
 
 function Estoque(){
     return(
-        <Header />
+
+        <div>
+            <Navebar />
+            <BarraDePesquisa/>
+        </div>
+
     )
 }
 
