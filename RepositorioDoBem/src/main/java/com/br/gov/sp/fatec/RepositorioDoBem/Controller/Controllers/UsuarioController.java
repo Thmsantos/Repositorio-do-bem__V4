@@ -13,6 +13,19 @@ public class UsuarioController {
     @Autowired
     private UsuarioService usuarioService;
 
+    @PostMapping("/login")
+    public ResponseEntity<?> login(@RequestBody Usuario usuario) {
+    // Valide o usuário com base em seu repositório
+    Usuario foundUser = usuarioService.validateUser(usuario.getEmail(), usuario.getSenha());
+    if (foundUser != null) {
+        String token = jwtUtil.generateToken(foundUser.getEmail());
+        return ResponseEntity.ok(token);
+    } else {
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Credenciais inválidas");
+    }
+}
+
+
     @PostMapping("/saveUsuario")
     public Usuario saveUsuario(@RequestBody Usuario usuario) {
         return usuarioService.saveUsuario(usuario);
