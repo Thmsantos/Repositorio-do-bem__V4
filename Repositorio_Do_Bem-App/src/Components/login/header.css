@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #0D2783;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
