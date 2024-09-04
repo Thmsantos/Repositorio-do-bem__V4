@@ -6,6 +6,7 @@ import QuemSomos from "../Components/home/quem-somos";
 import InstuicoesEnvolvidas from "../Components/home/instituicoes-envolvidas";
 
 
+
 function Home() {
     return (
         <div>

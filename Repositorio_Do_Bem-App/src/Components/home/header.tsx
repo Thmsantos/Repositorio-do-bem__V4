@@ -9,7 +9,7 @@ export default function Header() {
               <p>Repositório do bem</p>
           </div>
           <div id="direita">
-              <button id="bt">Sou uma empresa</button>
+              <button id="bto">Sou uma empresa</button>
           </div>
       </div>
     </>    
