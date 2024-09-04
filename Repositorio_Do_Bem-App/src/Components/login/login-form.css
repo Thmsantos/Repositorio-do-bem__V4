@@ -1,0 +1,76 @@
+.right-panel {
+    background-color: #002C93;
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    position: relative; 
+    left: -100px; 
+}
+
+.login-form {
+    display: left;
+    flex-direction: column;
+
+}
+
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #FDCB6E;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    color: #FDCB6E
+}
+
+.input-group img {
+    margin-right: 10px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.options a {
+    color: #FDCB6E;
+    text-decoration: none;
+}
+
+button {
+    background-color: #FDCB6E;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #EAB948;
+}
+
+.register {
+    text-align: center;
+    margin-top: 20px;
+    color: #FDCB6E;
+}
