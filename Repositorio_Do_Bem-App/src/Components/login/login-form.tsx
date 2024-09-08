@@ -1,34 +1,37 @@
-import "./login-form.css"
+import './login-form.css';
+
 function Login_Form() {
+    
+
     return (
-        <div className="right-panel">
-            <form className="login-form">
+        <>
+            <div id="direita">
                 <h2>Login</h2>
-                <div className="input-group">
-                    <label htmlFor="cnpj">
-                        <img src="https://via.placeholder.com/20" alt="Ícone de CNPJ" />
-                        <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ" />
-                    </label>
-                </div>
-                <div className="input-group">
-                    <label htmlFor="email">
-                        <img src="https://via.placeholder.com/20" alt="Ícone de Email" />
-                        <input type="email" id="email" name="email" placeholder="Email" />
-                    </label>
-                </div>
-                <div className="input-group">
-                    <label htmlFor="senha">
-                        <img src="https://via.placeholder.com/20" alt="Ícone de Senha" />
-                        <input type="password" id="senha" name="senha" placeholder="Senha" />
-                    </label>
-                </div>
-                <button type="submit">Entrar</button>
-                <div className="options">
-                    <a href="#">Esqueci a senha</a>
-                </div>
-                <p className="register">Não possui uma conta?</p>
-            </form>
-        </div>
+                <form id="form">
+                    <div className="input-container">
+                        <div className="input-box">
+                            <img src="./src/assets/images/EMAIL.png" alt="email" />
+                            <input name="email" type="text" placeholder="E-mail" required />
+                        </div>
+                        <div className="input-box">
+                            <img src="./src/assets/images/CNPJ.png" alt="cnpj" />
+                            <input name="cnpj" type="text" placeholder="CNPJ" required />
+                        </div>
+                        <div className="input-box">
+                            <img src="./src/assets/images/SENHA.png" alt="senha" />
+                            <input name="senha" type="password" placeholder="Senha" required />
+                        </div>
+                    </div>
+                    <div className="btn-container">
+                        <a href="#">Esqueceu a senha?</a>
+                        <br />
+                        <button type="submit">Entrar</button>
+                        <a href="../cadastro">Não possui uma conta</a>
+                    </div>
+                </form>
+            </div>
+        </>
     );
 }
+
 export default Login_Form;

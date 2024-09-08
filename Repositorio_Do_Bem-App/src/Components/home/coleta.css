@@ -5,7 +5,8 @@
     justify-content: center;
     background-color: rgba(13, 39, 131, 1);
     color: #F3B823;
-    font-family: 'Poppins';
+    font-family: 'Lato' 'Poppins';
+    padding: 40px;
 }
 
 
@@ -13,4 +14,27 @@
     padding: 20px 150px;
     background-color: rgba(13, 39, 131, 1);
     border-radius: 10px;
+}
+
+#endereco{
+    background-color: rgba(13, 39, 131, 1);
+    padding-left: 150px;
+}
+
+#endereço, h2{
+    color:#F3B823;
+}
+
+#endereço, p{
+    color:white;
+    padding-left: 30px;
+}
+
+.titulo{
+    display: flex;
+}
+
+.ender{
+    padding-bottom: 30px;
+    padding-top:50px;
 }

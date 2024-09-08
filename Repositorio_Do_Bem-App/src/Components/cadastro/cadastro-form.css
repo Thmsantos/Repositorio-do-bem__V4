@@ -14,22 +14,21 @@ body {
     align-items: center;
     flex-direction: column;
     width: 400px;
-    height: 450px;
+    height: auto; /* Ajustado para auto para se ajustar ao conteúdo */
     border: 1px solid rgba(243, 184, 35, 1);
     border-radius: 15px; 
     padding: 10px; 
-     
 }
 
 .input-box {
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 25px; /* Espaço entre os inputs */
+    margin-bottom: 15px; /* Espaço entre os inputs */
 }
 
 .input-box input {
-    width: 300px;
+    width: 100%; /* Ajusta a largura dos inputs para preencher o container */
     height: 45px;
     border-radius: 10px;
     border: 0;
@@ -84,9 +83,48 @@ body {
 
 #direita h2 {
     color: rgba(243, 184, 35, 1);
-    margin-bottom: 40px; 
+    margin-bottom: 20px; 
 }
 
 #form {
-    
+    width: 100%; /* Garante que o formulário use toda a largura disponível */
+}
+
+#linha {
+    display: flex;
+    justify-content: space-between; /* Espaça os inputs igualmente */
+}
+
+.input-linha {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 48%; /* Ajuste para que os inputs fiquem na mesma linha */
+}
+
+.input-linha input {
+    width: 100%; /* Ajusta a largura dos inputs para preencher o container */
+    height: 45px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgba(241, 239, 239, 1);
+    padding-left: 40px; /* Ajuste para o ícone */
+    font-size: 15px;
+}
+
+.input-linha img {
+    position: absolute;
+    left: 15px;
+    width: 25px;
+    padding: 9px;
+}
+
+
+.input-linha input:focus {
+    background-color: rgba(243, 184, 35, 1);
+    outline: none;
+}
+
+#nome{
+    padding-top:15px;
 }
