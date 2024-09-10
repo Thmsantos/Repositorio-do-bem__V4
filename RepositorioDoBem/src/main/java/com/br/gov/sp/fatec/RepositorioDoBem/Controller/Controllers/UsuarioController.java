@@ -3,6 +3,8 @@ package com.br.gov.sp.fatec.RepositorioDoBem.Controller.Controllers;
 import com.br.gov.sp.fatec.RepositorioDoBem.Model.Domain.Usuario;
 import com.br.gov.sp.fatec.RepositorioDoBem.Controller.Service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,6 +19,19 @@ public class UsuarioController {
     public Usuario saveUsuario(@RequestBody Usuario usuario) {
         return usuarioService.saveUsuario(usuario);
     }
+
+    
+    @PostMapping("/AuthUser")
+    public ResponseEntity<Boolean> login(@RequestBody String cnpj, String senha) {
+        boolean isAuthenticated = usuarioService.Login(cnpj, senha);
+
+        if (isAuthenticated) {
+            return new ResponseEntity<>(true, HttpStatus.OK); 
+        } else {
+            return new ResponseEntity<>(false, HttpStatus.UNAUTHORIZED);
+        }
+    }
+    
 
     @GetMapping("/getUsuario/{usuarioID}")
     public Usuario getUsuario(@PathVariable String usuarioID) {

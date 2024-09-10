@@ -22,17 +22,27 @@ public class UsuarioService {
                 .orElseThrow(() -> new RuntimeException("Usuario não encontrado"));
     }
 
+    
     public Usuario updateUsuario(Usuario usuario, String usuarioId) {
         usuario.setUsuarioId(usuarioId);
         return usuarioRepository.save(usuario);
     }
-
+    
     public void deleteUsuario(String usuarioId) {
         usuarioRepository.deleteById(usuarioId);
     }
-
+    
     public List<Usuario> getAllUsuarios(){
         return usuarioRepository.findAll();
     }
-
+    
+    public boolean Login(String cnpj, String senha) {
+        List<Usuario> usuariosArray = usuarioRepository.findAll();
+        for (Usuario u : usuariosArray) {
+            if (u.getCnpj().equals(cnpj) && u.getSenha().equals(senha)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
