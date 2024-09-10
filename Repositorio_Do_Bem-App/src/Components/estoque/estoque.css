@@ -1,0 +1,12 @@
+body{
+    background-color: #0D2783;
+    width: 100%;   /* Largura fixa para todas as divs */
+    height: 100%;  /* Altura fixa para todas as divs */
+}
+
+.filter-search {
+    margin-top: 5%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;         
+}
