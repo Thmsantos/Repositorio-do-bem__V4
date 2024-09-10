@@ -1,4 +1,3 @@
-
 /*Estilizando o Componente */
 body{
 
@@ -27,16 +26,16 @@ body{
     padding: 10px;
 }
 /* Estilo para as imagens na barra de navegação */
-.navbar-home {
+.navbar-home p {
     height:34 px; /* Ajuste conforme necessário */ 
-    color: white;
+    color: #F3B823;
     
     
   
 }
 .navbar-user {
     height:12 px; /* Ajuste conforme necessário */ 
-    margin-left: 1420px;
+    margin-left: 91%;
     height: 40px;
     
 
@@ -46,37 +45,3 @@ body{
     display: none;
 }
 
-
-button {
-    margin-top: 30px;
-    padding: 20px 20px;
-    background-color:white;
-    color: #3A2E92;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    display: flex;
-}
-.generate-report {
-    margin-right: 1000px; /* Espaço maior para separar do grupo de botões */
-    padding: 10px 20px;
-    display: flex;
-    border-radius: 20px;
-   
-   
-
-}
-
-
-.button-group {
-    display: flex;
-    justify-content: center;
-    gap: 40px; /* Espaço entre os botões */
-    margin-top: 10px;
-    border-radius: 20px;
-}
-
-button:hover {
-    background-color: white;
-    
-}
