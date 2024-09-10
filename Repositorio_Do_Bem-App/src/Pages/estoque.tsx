@@ -3,12 +3,14 @@ import BarraDePesquisa from "../Components/estoque/barrapesquisar/barraDePesquis
 import StockTable from "../Components/estoque/stocktable/tabela";
 import Filtro from "../Components/estoque/filtro/dropdown";
 import '/src/Components/estoque/estoque.css'
+import Title from "../Components/estoque/titulo/tituloestoque";
 
 function Estoque(){
     return(
 
         <div>
             <Navebar />
+            <Title/>
             <div className="filter-search">
                 <Filtro/>
                 <BarraDePesquisa/>
