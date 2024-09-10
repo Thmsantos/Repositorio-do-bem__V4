@@ -1,0 +1,36 @@
+.div-input{
+    margin-left: 80%;
+    position: relative;
+    width: 100%;              
+    max-width: 400px;          
+}
+
+.input {
+    color: rgb(100, 96, 96);
+    font-weight: bold;
+    background-color: #ffffff;
+    width: 400px;
+    height: 28px;
+    padding: 5px;
+    font-size: 15px;           
+    border-radius: 5px; 
+    border: 2px #00000060 solid;          
+}
+
+.input:hover {
+    background: #eceef3;
+}
+
+input:focus {
+    outline: none;
+  }
+  
+.img-search {
+    position: absolute;        
+    right: 5px;               
+    top: 50%;                  
+    transform: translateY(-50%); 
+    width: 20px;              
+    height: 20px;              
+}
+

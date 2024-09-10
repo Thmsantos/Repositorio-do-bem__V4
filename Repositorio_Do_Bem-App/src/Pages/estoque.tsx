@@ -1,5 +1,5 @@
 import Navebar from "../Components/estoque/navebar";
-import BarraDePesquisa from "../Components/estoque/barraDePesquisa";
+import BarraDePesquisa from "../Components/estoque/barrapesquisar/barraDePesquisa";
 import StockTable from "../Components/estoque/stocktable/tabela";
 
 function Estoque(){
