@@ -1,6 +1,6 @@
 import axios from "axios";
 
-function cadastro(){
+function cadastroUser(){
     axios.post("http://localhost:5555/saveUsuario", {
         "cnpj": "123456789",
         "nomeEmpresa" : "Nome",
@@ -10,4 +10,4 @@ function cadastro(){
     })
 }
 
-export default cadastro;
+export default cadastroUser;
