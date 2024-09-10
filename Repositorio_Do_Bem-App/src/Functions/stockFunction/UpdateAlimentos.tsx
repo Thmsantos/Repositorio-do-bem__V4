@@ -14,6 +14,7 @@ function UpdateAlimento(){
     axios.put(`http://localhost:5555/updateAlimento/${data.alimentoId}`)
     .then((res) => {
         console.log(res.data)
+        console.log(res.data)
     })
 }
 
