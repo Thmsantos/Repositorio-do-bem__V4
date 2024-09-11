@@ -25,7 +25,7 @@ function Login_Form() {
                     <div className="btn-container">
                         <a href="#">Esqueceu a senha?</a>
                         <br />
-                        <button type="submit">Entrar</button>
+                        <button type="submit"className="button-login">Entrar</button>
                         <a href="../cadastro">Não possui uma conta</a>
                     </div>
                 </form>
