@@ -3,6 +3,8 @@ import Home from "../Pages/home";
 import Estoque from "../Pages/estoque";
 import Login from "../Pages/login";
 import Cadastro from "../Pages/cadastro";
+import Modal1 from "../Pages/modal";
+
 const AppRoutes = () => {
     return(
         <BrowserRouter>
@@ -11,6 +13,7 @@ const AppRoutes = () => {
                 <BrowserRouterRoute path="/estoque" element={<Estoque />}/>
                 <BrowserRouterRoute path="/login" element={<Login />}/>
                 <BrowserRouterRoute path="/cadastro" element={<Cadastro />}/>
+                <BrowserRouterRoute path="/modal" element={<Modal1/>}/>
             </Routes>
         </BrowserRouter>
     )
