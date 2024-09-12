@@ -11,10 +11,11 @@ public class Usuario {
     private String cnpj;
     private String nomeEmpresa;
     private String cep;
+    private String numero;
     private String email;
     private String senha;
 
-    public Usuario(String usuarioId, String cnpj, String nomeEmpresa, String cep, String email, String senha) {
+    public Usuario(String usuarioId, String cnpj, String nomeEmpresa, String cep, String numero, String email, String senha) {
         super();
         this.usuarioId = usuarioId;
         this.cnpj = cnpj;
@@ -22,6 +23,7 @@ public class Usuario {
         this.cep = cep;
         this.email = email;
         this.senha = senha;
+        this.numero = numero;
     }
 
     public String getUsuarioId() {
@@ -38,6 +40,14 @@ public class Usuario {
 
     public void setCnpj(String cnpj) {
         this.cnpj = cnpj;
+    }
+
+    public String getNumero(){
+        return numero;
+    }
+
+    public void setNumero(String numero){
+        this.numero = numero;
     }
 
     public String getNomeEmpresa() {

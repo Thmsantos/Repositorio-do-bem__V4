@@ -20,7 +20,6 @@ public class UsuarioController {
         return usuarioService.saveUsuario(usuario);
     }
 
-    
     @PostMapping("/AuthUser")
     public ResponseEntity<Boolean> login(@RequestBody String cnpj, String senha) {
         boolean isAuthenticated = usuarioService.Login(cnpj, senha);
@@ -31,7 +30,6 @@ public class UsuarioController {
             return new ResponseEntity<>(false, HttpStatus.UNAUTHORIZED);
         }
     }
-    
 
     @GetMapping("/getUsuario/{usuarioID}")
     public Usuario getUsuario(@PathVariable String usuarioID) {

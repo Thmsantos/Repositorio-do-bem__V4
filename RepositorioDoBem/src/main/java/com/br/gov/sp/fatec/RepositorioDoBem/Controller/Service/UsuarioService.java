@@ -21,7 +21,6 @@ public class UsuarioService {
         return usuarioRepository.findById(usuarioId)
                 .orElseThrow(() -> new RuntimeException("Usuario não encontrado"));
     }
-
     
     public Usuario updateUsuario(Usuario usuario, String usuarioId) {
         usuario.setUsuarioId(usuarioId);
@@ -38,11 +37,15 @@ public class UsuarioService {
     
     public boolean Login(String cnpj, String senha) {
         List<Usuario> usuariosArray = usuarioRepository.findAll();
+        boolean loginBemSucedido = false;
+
         for (Usuario u : usuariosArray) {
             if (u.getCnpj().equals(cnpj) && u.getSenha().equals(senha)) {
-                return true;
+                loginBemSucedido = true;
+                break;
             }
         }
-        return false;
+
+        return loginBemSucedido;
     }
 }

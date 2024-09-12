@@ -10,3 +10,5 @@ const adicionarAlimento = async () => {
     });
     console.log(res.data);
 };
+
+export default adicionarAlimento;
