@@ -14,6 +14,7 @@ public class UsuarioService {
     UsuarioRepository usuarioRepository;
 
     public Usuario saveUsuario(Usuario usuario) {
+        List<Usuario> usuariosArray = usuarioRepository.findAll();
         return usuarioRepository.save(usuario);
     }
 
@@ -22,7 +23,6 @@ public class UsuarioService {
                 .orElseThrow(() -> new RuntimeException("Usuario não encontrado"));
     }
 
-    
     public Usuario updateUsuario(Usuario usuario, String usuarioId) {
         usuario.setUsuarioId(usuarioId);
         return usuarioRepository.save(usuario);
@@ -43,6 +43,6 @@ public class UsuarioService {
                 return true;
             }
         }
-        return false;
+        return false; 
     }
 }
