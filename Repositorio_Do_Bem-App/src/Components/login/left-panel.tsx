@@ -2,8 +2,8 @@ import "./left-panel.css"
 function Left_panel (){
     return(
         <div className="left-panel">
-            <h1>Welcome <br /> Back!</h1>
-            <p>Bem-vindo de volta ao seu melhor gerenciador de doação de alimentos.</p>
+            <h1>Bem Vindo <br /> de volta!</h1>
+            <p>ao seu melhor gerenciador de doação de alimentos.</p>
         </div>
     )
 }
