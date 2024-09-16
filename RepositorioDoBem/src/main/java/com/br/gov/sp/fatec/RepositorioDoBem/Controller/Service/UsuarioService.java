@@ -14,7 +14,6 @@ public class UsuarioService {
     UsuarioRepository usuarioRepository;
 
     public Usuario saveUsuario(Usuario usuario) {
-        List<Usuario> usuariosArray = usuarioRepository.findAll();
         return usuarioRepository.save(usuario);
     }
 

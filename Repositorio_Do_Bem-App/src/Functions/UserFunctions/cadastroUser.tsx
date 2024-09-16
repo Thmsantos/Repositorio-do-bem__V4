@@ -1,12 +1,21 @@
 import axios from "axios";
 
-function cadastroUser(){
-    axios.post("http://localhost:5555/saveUsuario", {
-        "cnpj": "123456789",
-        "nomeEmpresa" : "Nome",
-        "cep":"12345678",
-        "email":"nome@gmail.com",
-        "senha": "1234"
+interface UsuarioData {
+    cnpj: string;
+    nomeEmpresa: string;
+    numero: string;
+    cep: string;
+    email: string;
+    senha: string;
+}
+
+function cadastroUser(data: UsuarioData){
+    axios.post("http://localhost:5555/saveUsuario", data)
+    .then((res) => {
+        console.log(res.data);
+    })
+    .catch((error) => {
+        console.log(error);
     })
 }
 
