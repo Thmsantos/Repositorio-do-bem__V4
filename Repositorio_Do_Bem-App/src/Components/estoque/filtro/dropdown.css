@@ -2,6 +2,7 @@
     min-width: 15em;
     position: relative;
     margin-left: 15%;
+    color: #fff;
 }
 
 .dropdown *{
@@ -51,18 +52,18 @@
 .menu{
     list-style: none;
     padding: 0.2em 0.5em;
-    background: #323741;
-    border: 1px #363a43 solid;
+    background: #112468;
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
     border-radius: 0.5em;
-    color: #9fa5b5;
+    color: #ffffff;
     position: absolute;
     top: 3em;
     left: 50%;
-    width: 100%;
+    width: 15em;
+    height: 14em;
     transform: translateX(-50%);
     opacity: 0;
-    transition: 0.2s;
+    transition: 0.4s;
     z-index: 1;
 }
 
@@ -74,11 +75,11 @@
 }
 
 menu li:hover{
-    background: #2a2d35;
+    background: #0d2c83;
 }
 
 .active{
-    background: #23242a;
+    background: #0d2c83;
 
 }
 
