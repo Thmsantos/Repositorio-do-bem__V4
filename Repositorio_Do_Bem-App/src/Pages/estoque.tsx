@@ -4,6 +4,7 @@ import StockTable from "../Components/estoque/stocktable/tabela";
 import Filtro from "../Components/estoque/filtro/dropdown";
 import '/src/Components/estoque/estoque.css'
 import Title from "../Components/estoque/titulo/tituloestoque";
+import Botao from "../Components/estoque/Botoes/botao";
 
 function Estoque(){
     return(
@@ -16,7 +17,12 @@ function Estoque(){
                 <BarraDePesquisa/>
             </div>
             <StockTable />
+            <Botao />
+
+        
         </div>
+
+
 
     )
 }
