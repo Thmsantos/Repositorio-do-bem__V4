@@ -1,34 +1,60 @@
 import './login-form.css';
+import { LoginData } from '../../Functions/UserFunctions/Interfaces/LoginData';
+import { useState } from 'react';
+import Login from '../../Functions/UserFunctions/Login';
 
 function Login_Form() {
-    
+    const [cnpj, setCnpj] = useState<string>("");
+    const [senha, setSenha] = useState<string>("");
 
+    const usuario: LoginData = {
+        cnpj : cnpj.toString().trim(),
+        senha : senha.toString().trim()
+    }
+
+    const isFormValid = (): boolean => {
+        return Object.values(usuario).every(value => value !== "" && value !== undefined && value !== null);
+    };
+
+    const LoginFunction = async () => {
+
+        if(!isFormValid()){
+            alert("Por favor, preencha todos os campos.");
+            return;
+        }
+
+        try{
+            const res = await Login(usuario);
+            if(res.success){
+                return;
+            } else {
+                alert("Credenciais inválidas")
+            }
+        } catch(error) {
+            console.log(error, "nao foi")
+            alert("erro interno")
+        }
+    }
     return (
         <>
             <div id="direita">
                 <h2>Login</h2>
-                <form id="form">
                     <div className="input-container">
                         <div className="input-box">
-                            <img src="./src/assets/images/EMAIL.png" alt="email" />
-                            <input name="email" type="text" placeholder="E-mail" required />
-                        </div>
-                        <div className="input-box">
                             <img src="./src/assets/images/CNPJ.png" alt="cnpj" />
-                            <input name="cnpj" type="text" placeholder="CNPJ" required />
+                            <input name="cnpj" type="text" placeholder="CNPJ" onChange={(e) => setCnpj(e.target.value)}/>
                         </div>
                         <div className="input-box">
                             <img src="./src/assets/images/SENHA.png" alt="senha" />
-                            <input name="senha" type="password" placeholder="Senha" required />
+                            <input name="senha" type="password" placeholder="Senha" onChange={(e) => setSenha(e.target.value)}/>
                         </div>
                     </div>
                     <div className="btn-container">
                         <a href="#">Esqueceu a senha?</a>
                         <br />
-                        <button type="submit"className="button-login">Entrar</button>
+                        <button onClick={LoginFunction} type="submit"className="button-login">Entrar</button>
                         <a href="../cadastro">Não possui uma conta</a>
                     </div>
-                </form>
             </div>
         </>
     );
