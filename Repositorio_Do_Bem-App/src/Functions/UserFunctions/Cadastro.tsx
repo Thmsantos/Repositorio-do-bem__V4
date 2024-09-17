@@ -1,6 +1,6 @@
 import axios from "axios";
 import { UsuarioData } from "./Interfaces/UsuarioData";
-import { ResponseFunction } from "./Interfaces/ResponseFunction";
+import { ResponseFunction } from "../ResponseFunction";
 
 function cadastroUser(data: UsuarioData): Promise<ResponseFunction> {
     return axios.post("http://localhost:5555/saveUsuario", data)

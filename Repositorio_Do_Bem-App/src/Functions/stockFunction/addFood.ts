@@ -1,14 +1,21 @@
 import axios from "axios";
+import { AlimentoData } from "./Interfaces/AlimentoData";
+import { ResponseFunction } from "../ResponseFunction";
 
-const adicionarAlimento = async () => {
-    const res = await axios.post("http://localhost:5555/saveAlimento", {
-        nome: "Ervilha", 
-        peso: "70g",
-        validade: "20/07/2026",
-        quantidade: "5",
-        emailDoador: "analaura@gmail.com" 
-    });
-    console.log(res.data);
+function adicionarAlimento(alimento: AlimentoData) : Promise<ResponseFunction>{
+    return axios.post("http://localhost:5555/saveAlimento", alimento)
+        .then((res) => {
+            return {
+                success: true,
+                data: res.data
+            };
+        })
+        .catch((error) => {
+            return {
+                success: false,
+                error: error.message || 'Erro desconhecido'
+            };
+        })
 };
 
 export default adicionarAlimento;
