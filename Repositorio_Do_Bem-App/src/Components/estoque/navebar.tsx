@@ -1,18 +1,17 @@
-import './navebar.css'; // Importe o CSS para o componente
+import './navebar.css'
 
-function Navebar(){
-  return(
+export default function Navebar() {
+  return (
     <>
-      <div className="navbar">
-        <div className="navbar-home">
-          <p>home</p>
-        </div>
-        <div className="navbar-user">
-          <img src="./src/assets/images/user 2.png" alt="user 2" className="navbar-img" />
-        </div>
+      <div id="header">
+          <div id="esquerda">
+              <p>home</p>
+          </div>
+          <div id="direit">
+            <img src="/src/assets/images/user 1 (2).png" alt="" />
+          </div>
       </div>
-    </>
-  );
+    </>    
+    
+  )
 }
-
-export default Navebar;
