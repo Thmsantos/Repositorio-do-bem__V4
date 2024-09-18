@@ -1,7 +1,7 @@
 body{
     background-color: #0D2783;
-    width: 100%;   /* Largura fixa para todas as divs */
-    height: 100%;  /* Altura fixa para todas as divs */
+    width: 100%;  
+    height: 100%;  
 }
 
 .filter-search {

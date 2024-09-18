@@ -1,8 +1,6 @@
 .dropdown{
     min-width: 15em;
     position: relative;
-    margin-left: 15%;
-    color: #fff;
 }
 
 .dropdown *{
