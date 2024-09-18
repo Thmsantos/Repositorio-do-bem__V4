@@ -11,17 +11,17 @@ public class Alimento {
     private String nome;
     private String peso;
     private String validade;
-    private String quantidade;
     private String idDoador;
     private String emailDoador;
+    private String flag;
 
-    public Alimento(String alimentoId, String nome, String peso, String validade, String quantidade, String idDoador, String emailDoador) {
+    public Alimento(String alimentoId, String nome, String peso, String validade, String flag, String idDoador, String emailDoador) {
         super();
         this.alimentoId = alimentoId;
         this.nome = nome;
         this.peso = peso;
         this.validade = validade;
-        this.quantidade = quantidade;
+        this.flag = flag;
         this.idDoador = idDoador;
         this.emailDoador = emailDoador;
     }
@@ -74,12 +74,12 @@ public class Alimento {
         this.emailDoador = emailDoador;
     }
 
-    public String getQuantidade() {
-        return quantidade;
+    public String getFlag() {
+        return flag;
     }
 
-    public void setQuantidade(String quantidade) {
-        this.quantidade = quantidade;
+    public void setFlag(String flag) {
+        this.flag = flag;
     }
 
 }
