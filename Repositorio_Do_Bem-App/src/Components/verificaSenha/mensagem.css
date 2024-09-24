@@ -1,0 +1,18 @@
+.mensagem {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+}
+ 
+.mensagem h1{
+    text-align: left;
+}
+ 
+.mensagem h1 {
+    color: #F3B823;
+    padding-left: 25px;
+}
