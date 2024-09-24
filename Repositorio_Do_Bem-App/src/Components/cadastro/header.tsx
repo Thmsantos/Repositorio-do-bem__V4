@@ -1,13 +1,13 @@
 import "./header.css"
-function Header(){
+function HeaderSignUp(){
 
     return (
         <div className="header">
-        <a href="#" className="nav-link">home</a>
-        <a href="#" className="nav-link">pontos de coleta</a>
+        <a href="#" className="nav-link">Home</a>
+        <a href="#" className="nav-link">Pontos de coleta</a>
     </div>
 
     )
 
 }
-export default Header;
+export default HeaderSignUp;
