@@ -1,47 +1,46 @@
-/*Estilizando o Componente */
-body{
-
-    /* Aplica fundo azul ao corpo inteiro da página */
-    background-color: #3A2E92; /* Azul escuro */
-    margin: 0;
-    padding: 0;
-    height: 100%;
+#header {
     width: 100%;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    
-}
-
-.navbar {
-
+    height:9%; /* Ajuste conforme necessário */
     display: flex;
     flex-direction: row;
-    height: 35px;
-    background-color: #112468; /* Cor de fundo amarela */
-    width: 100%; /* Ocupa toda a largura da tela */
-    position: fixed; /* Mantém a barra fixa no topo da página */
-    top: 0; /* Alinha a barra no topo da tela */
-    left: 0; /* Começa do lado esquerdo */
-    align-items: center; /* Alinha verticalmente os itens no centro */
-    padding: 10px;
-}
-/* Estilo para as imagens na barra de navegação */
-.navbar-home p {
-    height:34 px; /* Ajuste conforme necessário */ 
-    color: #F3B823;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    background-color: #112468;
+    align-items: center;
     
-    
-  
-}
-.navbar-user {
-    height:12 px; /* Ajuste conforme necessário */ 
-    margin-left: 91%;
-    height: 40px;
-    
-
 }
 
-#menu-list{
-    display: none;
+#esquerda {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    margin-left: 40px;
+    height: 60px; 
 }
 
+#logoimg {
+    padding-top: 15px;
+    height: 70px; 
+}
+
+#esquerda p {
+    color: rgba(243, 184, 35, 1); /* Amarelo */
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+}
+#esquerda {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    margin-left: 10px;
+}
+#direit{
+    margin-right: 20px;
+}
+
+
+#esquerda p {
+    color: rgba(243, 184, 35, 1); /* Amarelo */
+    font-family: 'Poppins', sans-serif;
+}

@@ -17,7 +17,7 @@ button {
 
 .generate-report {
     width: 230px;
-    margin-left: 44%;
+    margin-left: 60%;
     border-radius: 18px; /* borda do botao */
     align-items: center;
     height: 50px;  /* altura dos botões */
@@ -34,9 +34,9 @@ button {
 .button-group {
     display: flex; /* Manter os botoes um ao lado do outro */
     justify-content: center;
-    gap: 55px; /* Espaço entre os botões */
+    gap: 25px; /* Espaço entre os botões */
     align-items: center;
-    margin-left: 65%; /* distancia dos botoes */
+    margin-left: 35%; /* distancia dos botoes */
 
 }
 
