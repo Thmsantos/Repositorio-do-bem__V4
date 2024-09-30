@@ -12,8 +12,8 @@ export default function Carousel() {
                         <img src="./src/assets/images/imagem1.png" alt="Imagem 2" />
                     </div>
                 </div>
-                <button class="carousel-prev">&#10094;</button>
-                <button class="carousel-next">&#10095;</button>
+                <button className="carousel-prev">&#10094;</button>
+                <button className="carousel-next">&#10095;</button>
             </div>
         </>
     );

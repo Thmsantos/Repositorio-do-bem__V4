@@ -5,4 +5,5 @@ export interface UsuarioData {
     cep: string;
     email: string;
     senha: string;
+    endereco: string;
 }

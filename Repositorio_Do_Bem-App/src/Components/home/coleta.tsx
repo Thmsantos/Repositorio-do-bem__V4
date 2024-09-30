@@ -1,40 +1,40 @@
 import './coleta.css'
-import Mapa from './mapa';
+import GetUsers from '../../Functions/UserFunctions/GetUsers'
+import { useEffect, useState } from 'react';
+import { UsuarioData } from '../../Functions/UserFunctions/Interfaces/UsuarioData';
 
 export default function Coleta(){
+    const [users, setUsers] = useState<UsuarioData[]>([]);
+
+    useEffect(() => {
+        const fetchUsers = async () => {
+            const usersData = await GetUsers();
+            console.log(usersData)
+            setUsers(usersData); 
+        };
+
+        fetchUsers();
+    }, []);
+
     return(
         <>
             <div id="coleta">
                 <h1>Pontos de coleta</h1>
-                
-                
             </div>
-            <div id="mapa">
-                <Mapa />
-            </div>
-            <div id ="endereco">
-                <div className="ender">
-                    <div className="titulo">
-                        <img src="./src\assets\images\mapas-e-bandeiras 1.png"></img>
-                        <h2> Igreja Videira Diadema</h2>
+            <div id="endereco">
+                {users.map((user) => (
+                    <div className="ender" key={user.cnpj}>
+                        <div className="titulo">
+                            <img src="./src/assets/images/mapas-e-bandeiras 1.png" alt="Mapa" />
+                            <h2>{user.nomeEmpresa}</h2>
+                        </div>
+                        <p>
+                            Endereço: R. Salgado de Castro, 400 - Centro, Diadema - SP, 09920-690 <br />
+                            Telefone: {user.email} <br />
+                            Horário: Segunda a sábado: 08h às 18h
+                        </p>
                     </div>
-                    <p> Endereço: R. Salgado de Castro, 400 - Centro, Diadema - SP, 09920-690 <br />
-                        Telefone: (11) 97388-0200 <br />
-                        Horário: Segunda a sábado: 08h às 18h
-                    </p>
-                </div>
-
-                <div className="ender">
-                    <div className="titulo">
-                        <img src="./src\assets\images\mapas-e-bandeiras 1.png"></img>
-                        <h2> Fatec Diadema - Luigi Papaiz</h2>
-                    </div>
-                    <p> Endereço: Av. Luiz Merenda, 443 - Campanário, Diadema - SP, 09931-390 <br />
-                        Telefone: (11) 4092-2471 <br />
-                        Horário: Segunda a sábado: 08h às 18h
-
-                    </p>
-                </div>
+                ))}
             </div>
         </>
     );

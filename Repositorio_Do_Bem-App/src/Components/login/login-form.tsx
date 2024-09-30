@@ -1,20 +1,10 @@
 import './login-form.css';
 import { LoginData } from '../../Functions/UserFunctions/Interfaces/LoginData';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Login from '../../Functions/UserFunctions/Login';
-import adicionarAlimento from '../../Functions/stockFunction/addFood';
-import { AlimentoData } from '../../Functions/stockFunction/Interfaces/AlimentoData';
+import GetUsers from '../../Functions/UserFunctions/GetUsers';
 
-function Login_Form() {
-    /* const alimento: AlimentoData = {
-        "nome": "Arroz",
-        "peso": "5kg",
-        "validade": "2025-12-31",
-        "quantidade": "50",
-        "emailDoador": "exemplo@doador.com",
-        "flag": "verde"
-    } */
-    
+function Login_Form() {    
     const [cnpj, setCnpj] = useState<string>("");
     const [senha, setSenha] = useState<string>("");
 
@@ -45,25 +35,7 @@ function Login_Form() {
             console.log(error, "nao foi")
             alert("erro interno")
         }
-    }
-
-    /* useEffect(() => {
-        const adicionar = async () => {
-            try {
-                const res = await adicionarAlimento(alimento);
-                if (res.success) {
-                    console.log("Alimento adicionado com sucesso");
-                } else {
-                    console.error("Erro ao adicionar alimento:", res.error);
-                }
-            } catch (error) {
-                console.error("Erro ao adicionar alimento:", error);
-            }
-        };
-
-        adicionar();
-    }, []); */
-    
+    }    
     return (
         <>
             <div id="direita">

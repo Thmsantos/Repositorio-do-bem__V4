@@ -2,6 +2,7 @@ import './cadastro-form.css';
 import cadastroUser from '../../Functions/UserFunctions/Cadastro';
 import { useState } from 'react';
 import { UsuarioData } from '../../Functions/UserFunctions/Interfaces/UsuarioData';
+import axios from 'axios';
 
 function Cadastro_Form() {
     const [cnpj, setCnpj] = useState<string>("");
@@ -10,6 +11,7 @@ function Cadastro_Form() {
     const [senha, setSenha] = useState<string>("");
     const [cep, setCep] = useState<string>("");
     const [nome, setNome] = useState<string>("");
+    const [endereco, setEndereco] = useState<string>("")
 
     const usuario: UsuarioData = {
         cnpj: cnpj.toString().trim(),
@@ -17,7 +19,8 @@ function Cadastro_Form() {
         numero: numero.toString().trim(),
         cep: cep.toString().trim(),
         email: email.toString().trim(),
-        senha: senha.toString().trim()
+        senha: senha.toString().trim(),
+        endereco: endereco.toString().trim()
     }
 
     const isFormValid = (): boolean => {
@@ -26,6 +29,11 @@ function Cadastro_Form() {
 
     const registerUser = async () => {
 
+        if(cep){
+            const end = axios.get(`https://viacep.com.br/ws/${cep}/json/`)
+    
+            console.log(end)
+        }
         if (!isFormValid()) {
             alert("Por favor, preencha todos os campos.");
             return;
