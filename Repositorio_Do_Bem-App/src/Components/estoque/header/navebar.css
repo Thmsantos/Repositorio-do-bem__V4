@@ -1,0 +1,48 @@
+#header {
+    width: 100%;
+    height:9%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    background-color: #112468;
+    align-items: center;
+    
+}
+
+#esquerda {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    margin-left: 40px;
+    height: 60px; 
+}
+
+#logo-header-img {
+    padding-top: 5px;
+    height: 35px; 
+}
+
+#esquerda p {
+    color: #F3B823;
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    font-size: 1rem;
+    font-weight: medium;
+}
+#esquerda {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+#direit{
+    margin-right: 20px;
+}
+
+
+#esquerda p {
+    color: #F3B823; 
+    font-family: 'Poppins', sans-serif;
+}
