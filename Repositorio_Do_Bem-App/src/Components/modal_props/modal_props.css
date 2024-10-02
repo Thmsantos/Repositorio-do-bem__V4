@@ -1,0 +1,11 @@
+.modal-open{
+    padding: 0.6rem 1.2rem;
+    background-color: #3336e4;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 1rem;
+    outline: none;
+}
