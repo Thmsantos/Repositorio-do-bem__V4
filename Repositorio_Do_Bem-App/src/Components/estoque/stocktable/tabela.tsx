@@ -1,6 +1,21 @@
 import './tabela.css';
+import GetAlimentos from '../../../Functions/stockFunction/GetAlimentos';
+import { AlimentoData } from '../../../Functions/stockFunction/Interfaces/AlimentoData';
+import { useEffect, useState } from 'react';
 
 function StockTable (){
+    const [alimentos, setAlimentos] = useState<AlimentoData[]>([]);
+
+    useEffect(() => {
+        const fetchAlimentos = async () => {
+            const alimentosAxios = await GetAlimentos();
+            console.log(alimentos)
+            setAlimentos(alimentosAxios); 
+        };
+
+        fetchAlimentos();
+    }, []);
+
     return (
         <>
             <div className='divStock'>

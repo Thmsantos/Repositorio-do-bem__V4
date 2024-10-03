@@ -1,9 +1,9 @@
 import axios from "axios";
 import { AlimentoData } from "./Interfaces/AlimentoData";
 
-async function getAlimentos(): Promise<AlimentoData[]>{
+async function GetAlimentos(): Promise<AlimentoData[]>{
     const response = await axios.get("http://localhost:5555/getAllAlimentos")
     return response.data as AlimentoData[];
 }
 
-export default getAlimentos();
+export default GetAlimentos;

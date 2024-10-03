@@ -9,7 +9,6 @@ export default function Coleta(){
     useEffect(() => {
         const fetchUsers = async () => {
             const usersData = await GetUsers();
-            console.log(usersData)
             setUsers(usersData); 
         };
 
