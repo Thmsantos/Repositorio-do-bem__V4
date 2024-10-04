@@ -1,0 +1,27 @@
+h2{
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 20px;
+    color: #F3B823;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+ 
+.container-graficos{
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.grafico-1, .grafico-2{
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    background-color: transparent;
+    color: black;
+    border: 1px white solid;
+    border-radius: 10px;
+}
