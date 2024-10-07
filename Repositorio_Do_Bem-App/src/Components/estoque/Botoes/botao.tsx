@@ -1,10 +1,9 @@
-import generatePdf from '../../../Functions/stockFunction/generatePDF';
-import './botao.css'; // Importe o CSS para o componente
-import '/src/Functions/stockFunction/generatePDF.tsx'
+import './botao.css';
 import adicionarAlimento from '../../../Functions/stockFunction/adicionarAlimento';
 import { AlimentoData } from '../../../Functions/stockFunction/Interfaces/AlimentoData';
 import { useEffect, useState } from 'react';
 import GetAlimentos from '../../../Functions/stockFunction/GetAlimentos';
+import generatePdf from '../../../Functions/stockFunction/generatePDF';
 
 function Botao(){
   const [alimentos, setAlimentos] = useState<AlimentoData[]>([]);

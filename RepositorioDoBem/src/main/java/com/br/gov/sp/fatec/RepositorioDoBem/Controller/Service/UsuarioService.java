@@ -22,6 +22,11 @@ public class UsuarioService {
                 .orElseThrow(() -> new RuntimeException("Usuario não encontrado"));
     }
 
+    public Usuario findUsuarioByStatusTrue() {
+        return usuarioRepository.findByStatusTrue()
+                .orElseThrow(() -> new RuntimeException("Nenhum usuário com status true encontrado"));
+    }
+
     public Usuario updateUsuario(Usuario usuario, String usuarioId) {
         usuario.setUsuarioId(usuarioId);
         return usuarioRepository.save(usuario);

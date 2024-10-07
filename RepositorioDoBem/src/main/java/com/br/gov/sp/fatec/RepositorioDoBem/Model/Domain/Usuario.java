@@ -13,8 +13,10 @@ public class Usuario {
     private String cep;
     private String email;
     private String senha;
+    private String endereco;
+    private Boolean status;
 
-    public Usuario(String usuarioId, String cnpj, String nomeEmpresa, String cep, String email, String senha) {
+    public Usuario(String usuarioId, String cnpj, String nomeEmpresa, String cep, String email, String senha, String endereco, Boolean status) {
         super();
         this.usuarioId = usuarioId;
         this.cnpj = cnpj;
@@ -22,6 +24,8 @@ public class Usuario {
         this.cep = cep;
         this.email = email;
         this.senha = senha;
+        this.endereco = endereco;
+        this.status = status;
     }
 
     public String getUsuarioId() {
@@ -30,6 +34,22 @@ public class Usuario {
 
     public void setUsuarioId(String usuarioId) {
         this.usuarioId = usuarioId;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
+
+    public Boolean getStatus(){
+        return status;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getEndereco() {
+        return endereco;
     }
 
     public String getCnpj() {

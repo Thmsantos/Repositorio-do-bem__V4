@@ -1,4 +1,5 @@
 export interface UsuarioData {
+    id?: string;
     cnpj: string;
     nomeEmpresa: string;
     numero: string;

@@ -1,35 +1,33 @@
 import style from './modalProps.module.css'
 
-interface IModal{
-    isOpen: boolean
-    setOpen: (isOpen: boolean)=> void
-    title: string
+interface IModal {
+    isOpen: boolean;
+    setOpen: (isOpen: boolean) => void;
+    title: string;
+    children?: React.ReactNode; 
 }
 
-function ModalProps2({isOpen, setOpen, title} :IModal){
-    if(isOpen){
-        return(
-        <>
+function ModalProps2({ isOpen, setOpen, title, children }: IModal) {
+    if (isOpen) {
+        return (
+            <>
+                <div className={style.background}>
+                    <div className={style.modal}>
+                        <div className={style.header}>
+                            <h1 className={style.titulo}>{title}</h1>
+                            <button className={style.close} onClick={() => setOpen(!isOpen)}>Fechar</button>
+                        </div>
 
-        <div className={style.background}>
-            <div className={style.modal}>
-
-                <div className={style.header}>
-                    <h1 className={style.titulo}>{title}</h1>
-                    <button className={style.close} onClick={()=>setOpen(!isOpen)}>Fechar</button>
+                        <div className={style.content}>
+                            {children}
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        </>
-     )
-    }else{
-        return(
-            <></>
-        )
+            </>
+        );
+    } else {
+        return <></>;
     }
-    
-    
 }
 
 export default ModalProps2;

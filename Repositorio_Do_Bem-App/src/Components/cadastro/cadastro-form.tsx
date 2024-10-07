@@ -1,8 +1,8 @@
 import './cadastro-form.css';
-import cadastroUser from '../../Functions/UserFunctions/Cadastro';
 import { useState } from 'react';
 import { UsuarioData } from '../../Functions/UserFunctions/Interfaces/UsuarioData';
 import axios from 'axios';
+import cadastroUser from '../../Functions/UserFunctions/Cadastro';
 
 function Cadastro_Form() {
     const [cnpj, setCnpj] = useState<string>("");
