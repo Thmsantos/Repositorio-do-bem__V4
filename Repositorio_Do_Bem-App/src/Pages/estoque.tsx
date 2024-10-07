@@ -5,6 +5,7 @@ import Filtro from "../Components/estoque/filtro/dropdown";
 import '/src/Components/estoque/estoque.css'
 import Title from "../Components/estoque/titulo/tituloestoque";
 import Botao from "../Components/estoque/Botoes/botao";
+import Graficos from "../Components/estoque/gráficos/graficos";
 
 function Estoque(){
     return(
@@ -18,6 +19,7 @@ function Estoque(){
             </div>
             <StockTable />
             <Botao />
+            <Graficos/>
 
         
         </div>
