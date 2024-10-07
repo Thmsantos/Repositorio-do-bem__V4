@@ -1,5 +1,5 @@
 export interface UsuarioData {
-    id?: string;
+    usuarioId?: string;
     cnpj: string;
     nomeEmpresa: string;
     numero: string;
@@ -7,4 +7,5 @@ export interface UsuarioData {
     email: string;
     senha: string;
     endereco: string;
+    status: boolean;
 }

@@ -4,6 +4,7 @@ import ModalProps2 from '../../modal_props2/modalProps';
 import { UsuarioData } from '../../../Functions/UserFunctions/Interfaces/UsuarioData';
 import GetUserStatus from '../../../Functions/UserFunctions/GetStatus';
 import EditUser from '../../../Functions/UserFunctions/EditUser';
+import DeleteUser from '../../../Functions/UserFunctions/DeleteUser'; // Assumindo que você tem uma função DeleteUser
 
 interface ModalUserInfoProps {
   isOpen: boolean;
@@ -14,28 +15,35 @@ interface ModalUserInfoProps {
 
 const ModalUserInfo: FC<ModalUserInfoProps> = ({ isOpen, setOpen, name, cnpj }) => {
   const [isEditOpen, setEditOpen] = useState(false);
+  const [isDeleteOpen, setDeleteOpen] = useState(false); // Estado para controlar o modal de deleção
   const [user, setUser] = useState<UsuarioData>();
   const [cnpjForm, setCnpjForm] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [cep, setCep] = useState<string>("");
   const [nome, setNome] = useState<string>("");
-  const [endereco, setEndereco] = useState<string>("")
-
+  const [endereco, setEndereco] = useState<string>("");
 
   useEffect(() => {
     const fetchUsers = async () => {
       const userData = await GetUserStatus();
-      console.log(userData)
       setUser(userData);
     };
 
     fetchUsers();
   }, []);
 
+  function openEditModal() {
+    if (user) {
+      setEmail(user?.email);
+      setCep(user?.cep);
+      setNome(user?.nomeEmpresa);
+      setCnpjForm(user?.cnpj);
+    }
+    setEditOpen(true);
+  }
+
   function EditUserChange() {
-    console.log(cnpjForm, email, cep, nome)
-     
-    if (user && user.id) {
+    if (user && user.usuarioId) {
       const updatedUser: UsuarioData = {
         ...user,
         cnpj: cnpjForm,
@@ -43,8 +51,8 @@ const ModalUserInfo: FC<ModalUserInfoProps> = ({ isOpen, setOpen, name, cnpj }) 
         cep: cep,
         email: email,
       };
-  
-      EditUser(updatedUser, user.id)
+
+      EditUser(updatedUser, user.usuarioId)
         .then((response) => {
           if (response) {
             alert("Usuário atualizado com sucesso!");
@@ -54,6 +62,31 @@ const ModalUserInfo: FC<ModalUserInfoProps> = ({ isOpen, setOpen, name, cnpj }) 
         .catch((error) => {
           console.error("Erro ao atualizar o usuário:", error);
           alert("Erro ao atualizar o usuário.");
+        });
+    } else {
+      alert("Usuário não encontrado");
+    }
+  }
+
+  function openDeleteModal() {
+    setDeleteOpen(true);
+  }
+
+  function handleDeleteUser() {
+    window.location.href = 'http://localhost:5173/login'
+    if (user && user.usuarioId) {
+      DeleteUser(user.usuarioId)
+        .then((response) => {
+          if (response) {
+            alert("Usuário deletado com sucesso!");
+            window.location.href = 'http://localhost:5555/'
+            setDeleteOpen(false);
+            setOpen(false);
+          }
+        })
+        .catch((error) => {
+          console.error("Erro ao deletar o usuário:", error);
+          alert("Erro ao deletar o usuário.");
         });
     } else {
       alert("Usuário não encontrado");
@@ -81,22 +114,40 @@ const ModalUserInfo: FC<ModalUserInfoProps> = ({ isOpen, setOpen, name, cnpj }) 
             <p>{name}</p>
             <p>{cnpj}</p>
             <button>Sair</button>
-            <button onClick={() => setEditOpen(true)}>Editar usuário</button>
-            <button>Deletar usuário</button>
+            <button onClick={openEditModal}>Editar usuário</button>
+            <button onClick={openDeleteModal}>Deletar usuário</button>
           </div>
         </div>
       </div>
 
-      <ModalProps2
-        isOpen={isEditOpen}
-        setOpen={setEditOpen}
-        title="Editar Usuário"
-      >
-        <input placeholder='Cnpj' defaultValue={user?.cnpj} onChange={(e) => setCnpjForm(e.target.value)} />
-        <input placeholder='Nome' defaultValue={user?.nomeEmpresa} onChange={(e) => setNome(e.target.value)} />
-        <input placeholder='Cep' defaultValue={user?.cep} onChange={(e) => setCep(e.target.value)} />
-        <input placeholder='Email' defaultValue={user?.email} onChange={(e) => setEmail(e.target.value)} />
+      <ModalProps2 isOpen={isEditOpen} setOpen={setEditOpen} title="Editar Usuário">
+        <input
+          placeholder="Cnpj"
+          defaultValue={user?.cnpj}
+          onChange={(e) => setCnpjForm(e.target.value)}
+        />
+        <input
+          placeholder="Nome"
+          defaultValue={user?.nomeEmpresa}
+          onChange={(e) => setNome(e.target.value)}
+        />
+        <input
+          placeholder="Cep"
+          defaultValue={user?.cep}
+          onChange={(e) => setCep(e.target.value)}
+        />
+        <input
+          placeholder="Email"
+          defaultValue={user?.email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
         <button onClick={EditUserChange}>Salvar</button>
+      </ModalProps2>
+
+      <ModalProps2 isOpen={isDeleteOpen} setOpen={setDeleteOpen} title="Deletar Usuário">
+        <p>Deseja realmente excluir o usuário?</p>
+        <button onClick={handleDeleteUser}>Excluir</button>
+        <button onClick={() => setDeleteOpen(false)}>Cancelar</button>
       </ModalProps2>
     </>
   );

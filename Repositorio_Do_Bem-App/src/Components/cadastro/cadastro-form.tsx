@@ -11,7 +11,8 @@ function Cadastro_Form() {
     const [senha, setSenha] = useState<string>("");
     const [cep, setCep] = useState<string>("");
     const [nome, setNome] = useState<string>("");
-    const [endereco, setEndereco] = useState<string>("")
+    const [endereco, setEndereco] = useState<string>("Rua dos testes")
+    const [status, setStatus] = useState<boolean>(false)
 
     const usuario: UsuarioData = {
         cnpj: cnpj.toString().trim(),
@@ -20,7 +21,8 @@ function Cadastro_Form() {
         cep: cep.toString().trim(),
         email: email.toString().trim(),
         senha: senha.toString().trim(),
-        endereco: endereco.toString().trim()
+        endereco: endereco.toString().trim(),
+        status: status,
     }
 
     const isFormValid = (): boolean => {
@@ -34,6 +36,7 @@ function Cadastro_Form() {
     
             console.log(end)
         }
+
         if (!isFormValid()) {
             alert("Por favor, preencha todos os campos.");
             return;
