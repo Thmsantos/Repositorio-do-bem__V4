@@ -17,6 +17,8 @@
     align-items: center; 
     margin-left: 40px;
     height: 60px; 
+    cursor: pointer
+
 }
 
 #logo-header-img {
@@ -30,6 +32,9 @@
     margin: 0; 
     font-size: 1rem;
     font-weight: medium;
+    
+    
+    
 }
 #esquerda {
     display: flex;

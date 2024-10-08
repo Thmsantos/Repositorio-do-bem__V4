@@ -23,6 +23,7 @@ button {
     height: 50px;  /* altura dos botões */
     font-weight: bold;  /* negrito */
     font-size: 17px; /* Tamanho da fonte para os botões */
+    
 
 }
 
@@ -37,6 +38,7 @@ button {
     gap: 25px; /* Espaço entre os botões */
     align-items: center;
     margin-left: 35%; /* distancia dos botoes */
+    
 
 }
 
@@ -46,6 +48,7 @@ button {
     font-size: 17px; /* Tamanho da fonte para os botões */
     font-weight: bold; /* negrito */
     border-radius: 18px; /* borda doe botões */
+    
 
 
 }

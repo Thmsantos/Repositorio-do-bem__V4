@@ -9,11 +9,12 @@ import PaginaErro404 from "../Pages/pagina_erro_404";
 import PaginaErro500 from "../Pages/pagina_erro_500";
 import Modal_Props from "../Pages/modal_props";
 
+
 const AppRoutes = () => {
     return(
         <BrowserRouter>
             <Routes>
-                <BrowserRouterRoute path="/" element={<Home />}/>
+                <BrowserRouterRoute path="/home" element={<Home />}/>
                 <BrowserRouterRoute path="/estoque" element={<Estoque />}/>
                 <BrowserRouterRoute path="/login" element={<Login />}/>
                 <BrowserRouterRoute path="/cadastro" element={<Cadastro />}/>

@@ -13,7 +13,12 @@ export default function Navebar() {
       <div id="header">
         
           <div id="esquerda">
-              <p>Home</p>
+          <p 
+          onClick={() => window.location.href = 'http://localhost:5173/home'} // Redireciona ao clicar
+        
+          >
+          pontos de coleta
+        </p>
           </div>
           <div id="direit">
             <img 

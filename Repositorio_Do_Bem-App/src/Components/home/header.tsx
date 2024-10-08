@@ -1,6 +1,9 @@
-import './header.css'
+import './header.css';
 
 export default function Header() {
+  const handleButtonClick = () => {
+    window.location.href = 'http://localhost:5173/login'; // Redireciona para a página de login
+  };
   return (
     <>
       <div id="header">
@@ -9,12 +12,13 @@ export default function Header() {
               <p>Repositório do bem</p>
           </div>
           <div id="direit">
-              <button id="bto">Sou uma empresa</button>
+          <button id="bto" onClick={handleButtonClick}>
+          Sou uma empresa
+          </button>
+            
           </div>
       </div>
     </>    
     
   )
 }
-
-

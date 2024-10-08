@@ -51,10 +51,14 @@ function Login_Form() {
                         </div>
                     </div>
                     <div className="btn-container">
-                        <a href="#">Esqueceu a senha?</a>
-                        <br />
-                        <button onClick={LoginFunction} type="submit"className="button-login">Entrar</button>
-                        <a href="../cadastro">Não possui uma conta</a>
+                    {/* Redireciona para a página de cadastro ao clicar em "Esqueceu a senha?" */}
+                    <a onClick={() => window.location.href = 'http://localhost:5173/verificaSenha'} style={{ cursor: 'pointer' }}>Esqueceu a senha?</a>
+                    <br />
+                    <button onClick={LoginFunction} type="submit" className="button-login">Entrar</button>
+                    {/* Redireciona para a página de cadastro */}
+                    <a onClick={() => window.location.href = 'http://localhost:5173/cadastro'} style={{ cursor: 'pointer' }}>Não possui uma conta</a>
+                    
+                    
                     </div>
             </div>
         </>
