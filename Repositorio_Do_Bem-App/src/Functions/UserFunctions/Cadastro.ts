@@ -5,7 +5,7 @@ import { ResponseFunction } from "../ResponseFunction";
 function cadastroUser(data: UsuarioData): Promise<ResponseFunction> {
     return axios.post("http://localhost:5555/saveUsuario", data)
         .then((res) => {
-            window.location.href = "../../Pages/login"
+            window.location.href = "http://localhost:5173/login"
             return {
                 success: true,
                 data: res.data
