@@ -1,8 +1,8 @@
 export interface AlimentoData{
+    alimentoId: string,
     nome: string, 
     peso: string,
     validade: string,
-    quantidade: string,
     emailDoador: string,
     flag: string 
 }
