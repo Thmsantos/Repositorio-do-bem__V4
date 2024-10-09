@@ -27,6 +27,7 @@ function Login_Form() {
         try{
             const res = await Login(usuario);
             if(res.success){
+                alert("bem vindo")
                 return;
             } else {
                 alert("Credenciais inválidas")

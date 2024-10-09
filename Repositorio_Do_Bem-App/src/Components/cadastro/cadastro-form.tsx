@@ -45,8 +45,9 @@ function Cadastro_Form() {
         try{
             const res = await cadastroUser(usuario);
             if(res.success){
-                console.log("cadastrou")
+                alert("cadastrado")
             } else {
+                alert("cadastrado")
                 console.log("nao cadastrou")
             }
         } catch(error) {

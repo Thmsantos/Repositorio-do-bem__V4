@@ -1,8 +1,8 @@
 export interface AlimentoData{
-    alimentoId: string,
+    alimentoId?: string,
     nome: string, 
     peso: string,
     validade: string,
-    emailDoador: string,
+    emailDoador?: string,
     flag: string 
 }
