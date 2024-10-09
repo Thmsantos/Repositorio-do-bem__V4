@@ -4,7 +4,8 @@
     display: flex;
     align-items: center; 
     justify-content: center;
-    padding: 20px; 
+    padding: 20px;
+    margin-right:100px;
 }
 
 .left-panel h1, .left-panel p {
@@ -20,6 +21,6 @@
     font-size: 18px;
     margin-top: 20px;
     max-width: 300px; 
-    margin-bottom: 0; 
+    margin-bottom: 200px; 
     color:white;
 }

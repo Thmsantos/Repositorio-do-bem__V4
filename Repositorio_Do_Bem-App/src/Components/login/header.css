@@ -3,19 +3,21 @@
     justify-content: flex-start;
     padding: 20px;
     background-color: #0D2783;
-    width: 100%; /* Garante que o header ocupe toda a largura da página */
+    width:100%;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%; /* Garante que o header ocupe toda a largura da página */
     z-index: 1000;
 }
+
+
 
 .nav-link {
     color: white;
     text-decoration: none;
     margin-right: 20px;
     font-size: 18px;
-    cursor: pointer; /* Adiciona a mãozinha */
 }
 
 .nav-link:hover {

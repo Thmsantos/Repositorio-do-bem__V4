@@ -57,13 +57,13 @@ function Cadastro_Form() {
    
     return (
         <>
-            <div id="direita">
+            <div id="direitac">
                 <h2>Cadastre-se</h2>
                     <div id="inputinhos">
-                    <div className="input-box">
-                        <img src="./src/assets/images/NOME.png" alt="nome" />
-                        <input name="nome" type="text" placeholder="Nome" onChange={(e) => setNome(e.target.value)} />
-                    </div>
+                        <div className="input-box">
+                            <img src="./src/assets/images/NOME.png" alt="nome" />
+                            <input name="nome" type="text" placeholder="Nome" onChange={(e) => setNome(e.target.value)} />
+                        </div>
                         <div className="input-box">
                             <img src="./src/assets/images/EMAIL.png" alt="email" />
                             <input name="email" type="text" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)} />
@@ -82,12 +82,12 @@ function Cadastro_Form() {
                                 <input name="cep" type="text" placeholder="CEP"  onChange={(e) => setCep(e.target.value)} />
                             </div>
                             <div className="input-linha" id="num">
-                                <input name="numero" type="text" placeholder="Nº"  onChange={(e) => setNumero(e.target.value)}/>
+                                <input className='inputNumero' name="numero" type="text" placeholder="Nº"  onChange={(e) => setNumero(e.target.value)}/>
                             </div>
                         </div>
                     </div>
                     
-                    <div id="btn">
+                    <div id="btnc">
                         <button onClick={registerUser}>Cadastrar</button>
                         <a href="../login">Já possui uma conta?</a>
                     </div>

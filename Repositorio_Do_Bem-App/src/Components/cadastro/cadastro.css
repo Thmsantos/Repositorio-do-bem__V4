@@ -1,13 +1,14 @@
 
 
-#conteudo{
+#conteudoc{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    padding:100px;
+    padding:80px 0px 10px 0px;
     background-color: #0D2783;
     overflow: hidden;
     height: 100%;
+
 }
 

@@ -1,8 +1,8 @@
 import './login-form.css';
-import { LoginData } from '../../Functions/UserFunctions/Interfaces/LoginData';
+import { LoginData } from '../../../../../Users/Aluno/Documents/Repositorio-do-bem__V4/Repositorio_Do_Bem-App/src/Functions/UserFunctions/Interfaces/LoginData';
 import { useState } from 'react';
-import Login from '../../Functions/UserFunctions/Login';
-import GetUsers from '../../Functions/UserFunctions/GetUsers';
+import Login from '../../../../../Users/Aluno/Documents/Repositorio-do-bem__V4/Repositorio_Do_Bem-App/src/Functions/UserFunctions/Login';
+import GetUsers from '../../../../../Users/Aluno/Documents/Repositorio-do-bem__V4/Repositorio_Do_Bem-App/src/Functions/UserFunctions/GetUsers';
 
 function Login_Form() {    
     const [cnpj, setCnpj] = useState<string>("");
@@ -38,7 +38,7 @@ function Login_Form() {
     }    
     return (
         <>
-            <div id="direita">
+            <div id="direital">
                 <h2>Login</h2>
                     <div className="input-container">
                         <div className="input-box">
@@ -50,15 +50,10 @@ function Login_Form() {
                             <input name="senha" type="password" placeholder="Senha" onChange={(e) => setSenha(e.target.value)}/>
                         </div>
                     </div>
-                    <div className="btn-container">
-                    {/* Redireciona para a página de cadastro ao clicar em "Esqueceu a senha?" */}
-                    <a onClick={() => window.location.href = 'http://localhost:5173/verificaSenha'} style={{ cursor: 'pointer' }}>Esqueceu a senha?</a>
-                    <br />
-                    <button onClick={LoginFunction} type="submit" className="button-login">Entrar</button>
-                    {/* Redireciona para a página de cadastro */}
-                    <a onClick={() => window.location.href = 'http://localhost:5173/cadastro'} style={{ cursor: 'pointer' }}>Não possui uma conta</a>
-                    
-                    
+                    <div className="btnl">
+                        <a href="#">Esqueceu a senha?</a>
+                        <button onClick={LoginFunction} type="submit"className="button-login">Entrar</button>
+                        <a href="../cadastro">Não possui uma conta?</a>
                     </div>
             </div>
         </>
