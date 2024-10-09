@@ -15,7 +15,7 @@ function ModalProps2({ isOpen, setOpen, title, children }: IModal) {
                     <div className={style.modal}>
                         <div className={style.header}>
                             <h1 className={style.titulo}>{title}</h1>
-                            <button className={style.close} onClick={() => setOpen(!isOpen)}>Fechar</button>
+                            <button className={style.close} onClick={() => setOpen(!isOpen)}>x</button>
                         </div>
 
                         <div className={style.content}>

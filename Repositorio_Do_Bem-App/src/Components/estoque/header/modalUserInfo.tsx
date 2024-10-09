@@ -113,9 +113,9 @@ const ModalUserInfo: FC<ModalUserInfoProps> = ({ isOpen, setOpen, name, cnpj }) 
           <div className={style.descricao}>
             <p>{name}</p>
             <p>{cnpj}</p>
-            <button>Sair</button>
             <button onClick={openEditModal}>Editar usuário</button>
             <button onClick={openDeleteModal}>Deletar usuário</button>
+            <button>Sair</button>
           </div>
         </div>
       </div>
@@ -146,8 +146,8 @@ const ModalUserInfo: FC<ModalUserInfoProps> = ({ isOpen, setOpen, name, cnpj }) 
 
       <ModalProps2 isOpen={isDeleteOpen} setOpen={setDeleteOpen} title="Deletar Usuário">
         <p>Deseja realmente excluir o usuário?</p>
-        <button onClick={handleDeleteUser}>Excluir</button>
-        <button onClick={() => setDeleteOpen(false)}>Cancelar</button>
+        <button onClick={handleDeleteUser} className='delete-user-button' >Excluir</button>
+        <button onClick={() => setDeleteOpen(false)} className='cancel-button' >Cancelar</button>
       </ModalProps2>
     </>
   );

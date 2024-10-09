@@ -14,7 +14,9 @@
     font-family: "Poppins", system-ui;
     font-weight: 500;
     font-style: normal;
-    padding-left: 0.1rem
+    padding-left: 0.1rem;
+    transition: 0.8s;
+    font-size: 15px;
 }
 
 .descricao{
@@ -26,11 +28,15 @@
 }
 
 .descricao p {
-    margin: 0;
+    margin-bottom: 1rem;
+    color:  white;
+    font-weight: bold; 
 }
 
 .descricao p+p {
-    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color:  white;
+    font-weight: bold; 
 }
 
 .header {
@@ -47,4 +53,27 @@
     background: none;
     padding: 0;
 }
+
+.modal button{
+    background-color: white;
+    color:  #F3B823;
+    width: 200px;
+    height: 42px;
+    margin-bottom: 1rem;
+    margin-left: 10%;
+    transition: all 0.1s ease;
+    letter-spacing: 0.2px;
+    font-weight: bold;     
+}
+
+.modal button:focus {
+    border: none; 
+    border: 1px solid #F3B823;
+    outline: none;
+}
+
+.modal button:hover{
+    border: 1px solid #F3B823;
+}
+
 
