@@ -4,16 +4,18 @@
     background-color: #0D2783;
     display: grid;
     grid-template-columns: 1fr 50px 1fr;
+    padding-top: 70px;
 
 }
 
 .quem-somos-titulo {
-    margin-left: 300px;
+    margin-left: 250px;
     font-family: 'Poppins';
     color: #ffffff;
     font-weight: 700;
     font-size: 60px;
     grid-column: 1;
+    margin-right:200px;
 }
 
 .quem-somos-texto {
@@ -23,5 +25,10 @@
     grid-column: 3;
     font-size: 20px;
     margin-right: 140px;
-    margin-top: 60px;
+}
+
+.quem-somos-texto p{
+    color:#ffffff;
+    text-align: justify;
+
 }
