@@ -1,8 +1,7 @@
 import './login-form.css';
-import { LoginData } from '../../../../../Users/Aluno/Documents/Repositorio-do-bem__V4/Repositorio_Do_Bem-App/src/Functions/UserFunctions/Interfaces/LoginData';
+import { LoginData } from '../../Functions/UserFunctions/Interfaces/LoginData';
 import { useState } from 'react';
-import Login from '../../../../../Users/Aluno/Documents/Repositorio-do-bem__V4/Repositorio_Do_Bem-App/src/Functions/UserFunctions/Login';
-import GetUsers from '../../../../../Users/Aluno/Documents/Repositorio-do-bem__V4/Repositorio_Do_Bem-App/src/Functions/UserFunctions/GetUsers';
+import Login from '../../Functions/UserFunctions/Login';
 
 function Login_Form() {    
     const [cnpj, setCnpj] = useState<string>("");
