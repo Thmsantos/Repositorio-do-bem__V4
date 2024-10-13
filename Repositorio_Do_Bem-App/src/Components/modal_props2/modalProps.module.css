@@ -16,13 +16,17 @@
     width: 500px;
     max-width: 90%;
     background-color: #fff;
-    padding: 1.2rem;
+    padding: 0.9rem;
     border-radius: 0.5rem;
     z-index: 10;
+    transition: 0.8s;
 }
 
 .titulo{
     color: #F3B823;
+    font-size: 15px;
+    margin-top: 2px;
+    margin-left: 5%;
 }
 
 .descricao{
@@ -38,17 +42,55 @@
     padding-bottom: 1rem;
 }
 
-.close{
-    padding: 0.6rem 1.2rem;
-    background-color: #d41919;
-    color: #fff;
+.modal .close{
+    /* padding: 0.6rem 1.2rem; */
+    background-color: transparent;
+    color: #d41919;
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 0.50rem;
     cursor: pointer;
     opacity: 0.9;
-    font-size: 1rem;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    box-shadow: none; 
+    outline: none;
+    transform: translateY(-55%);
+    margin-right: 0px;
 }
 
 .close:hover{
     opacity: 1;
 }
+
+.modal button{
+    background-color: transparent;
+    color:  #F3B823;
+    width: 200px;
+    height: 42px;
+    margin-bottom: 1rem;
+    margin-left: 7%;
+    letter-spacing: 0.2px;
+    font-weight: bold;  
+    font-size: 14px;  
+}
+
+.modal .delete-button:focus {
+    border: none; 
+    border: 1px solid white;
+    outline: none;
+}
+.modal .cancel-button:focus {
+    border: none; 
+    border: 1px solid white;
+    outline: none;
+}
+
+.modal button:focus {
+    border: none; 
+    outline: none;
+}
+
+
+
+
