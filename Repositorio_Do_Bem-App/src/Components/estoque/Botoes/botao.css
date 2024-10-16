@@ -1,54 +1,55 @@
 button {
     background-color: white;
-    color: #3A2E92; /* cor das letras */
-    font-weight: bold; /* negrito */
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    color: #3A2E92; /* Cor das letras */   
 }
 
 .button-container {
-    width: 100%;
-    height: 100%;
     display: flex;
-    margin-top: 10%;  /* distancia da tabela */
+    margin-top: 40px; /* Distância da tabela */
     align-items: center;
+    margin-left: 11%; /* distancia dos botoes */
 }
+
 
 .generate-report {
-    width: 230px;
-    margin-left: 60%;
-    border-radius: 18px; /* borda do botao */
-    align-items: center;
-    height: 50px;  /* altura dos botões */
-    font-weight: bold;  /* negrito */
-    font-size: 17px; /* Tamanho da fonte para os botões */
-    
+    width: 150px; /* largura dos botões */
+    border-radius: 10px; /* Borda arredondada */
+    height: 40px;  /* Altura do botão */
+    font-weight: bold;  /* Negrito */
+    font-size: 15px; /* Tamanho da fonte */
+    background-color: white;
+    cursor: pointer; /* Garantir que a mãozinha apareça */
+    display: flex; /* Para centralizar o texto */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
 
 }
 
-.generate-report:hover, .button-group button:hover {
-    background-color: #F3B823; /* cor de fundo dos botões */
+.generate-report:hover{
+    background-color: #f3a323; /* Cor de fundo amarela ao passar o cursor */
 
 }
 
 .button-group {
-    display: flex; /* Manter os botoes um ao lado do outro */
-    justify-content: center;
-    gap: 25px; /* Espaço entre os botões */
-    align-items: center;
-    margin-left: 35%; /* distancia dos botoes */
-    
-
+    display: flex; /* Manter os botões lado a lado */
+    justify-content: center; /* Centralizar os botões */
+    gap: 40px; /* Espaço entre os botões */
+    margin-left: 25%; /* Aumente o valor para mover o grupo mais para a direita */
 }
 
 .button-group button {
-    width: 290px; /* largura dos botões */
-    height: 40px; /* altura dos botões */
-    font-size: 17px; /* Tamanho da fonte para os botões */
-    font-weight: bold; /* negrito */
-    border-radius: 18px; /* borda doe botões */
-    
+    width: 150px; /* largura dos botões */ /* O botão ocupará 50% da largura da página */
+    height: 40px; /* Altura dos botões */
+    font-size: 15px; /* Tamanho da fonte para os botões */
+    font-weight: bold; /* Negrito */
+    border-radius: 10px; /* Borda arredondada */
+    background-color: white;
+    display: flex; /* Para centralizar o texto */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    cursor: pointer; /* Garantir que a mãozinha apareça */
+}
 
-
+.button-group button:hover {
+    background-color: #F3B823; /* Fundo amarelo para os outros botões ao passar o cursor */
 }
