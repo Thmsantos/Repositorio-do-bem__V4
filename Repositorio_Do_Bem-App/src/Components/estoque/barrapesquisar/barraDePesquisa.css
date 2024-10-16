@@ -32,3 +32,12 @@ input:focus {
     height: 20px;              
 }
 
+.highlight {
+    background-color:#f3b82367;;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+

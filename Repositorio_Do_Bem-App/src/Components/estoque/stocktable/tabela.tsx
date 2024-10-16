@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import ModalProps2 from '../../modal_props2/modalProps';
 import UpdateAlimento from '../../../Functions/stockFunction/UpdateAlimentos';
 import DeleteAlimento from '../../../Functions/stockFunction/DeleteAlimento';
+import BarraDePesquisa from '../barrapesquisar/barraDePesquisa';
 
 function StockTable() {
     const [alimentos, setAlimentos] = useState<AlimentoData[]>([]);
@@ -76,6 +77,7 @@ function StockTable() {
 
     return (
         <>
+
             <div className='divStock'>
                 <table>
                     <thead>
@@ -85,8 +87,8 @@ function StockTable() {
                     </thead>
                     <tbody>
                         {alimentos.map((alimento) => (
-                            <tr key={alimento.alimentoId}>
-                                <td>{alimento.nome}</td>
+                            <tr key={alimento.alimentoId} className='alimento-row'>
+                                <td className='alimentos'>{alimento.nome}</td>
                                 <td>{alimento.peso}</td>
                                 <td>{alimento.validade}</td>
                                 <td>
