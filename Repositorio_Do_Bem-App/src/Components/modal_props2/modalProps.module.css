@@ -24,13 +24,10 @@
 
 .titulo{
     color: #F3B823;
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 2px;
     margin-left: 5%;
-}
-
-.descricao{
-    color: #000;
+    font-family: 'Poppins';
 }
 
 .header{
@@ -91,6 +88,23 @@
     outline: none;
 }
 
+.content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
 
-
-
+.content > input {
+    background-color: #ffffff;
+    border-radius: 30px;
+    border-style: solid;
+    padding: 5px;
+    height: 20px;
+    width: 90%;
+    color: #000;
+    margin-bottom: 10px;
+    align-items: center;
+    padding-left: 10px;
+    font-family: 'Poppins';
+}
