@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import './botao.css';
 import adicionarAlimento from '../../../Functions/stockFunction/adicionarAlimento';
 import { useState } from 'react';
@@ -40,7 +41,7 @@ function Botao() {
       <div className="button-container">
         <div> <button className="generate-report" onClick={generatePdf}>Gerar Relatório</button></div>
         <div className="button-group">
-          <button className="botoes" onClick={() => {openModal()}}>+ Add novo alimento</button>
+          <button className="botoes" onClick={() => {openModal()}}>+ Add alimento</button>
           <button className="botoes">- Fazer doação</button>
         </div>
       </div>
