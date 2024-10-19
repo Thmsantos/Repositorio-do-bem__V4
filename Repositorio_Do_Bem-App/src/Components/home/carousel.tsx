@@ -2,9 +2,13 @@ import React, { useState, useEffect } from 'react';
 import './carousel.css';
 
 const images = [
-    './src/assets/images/imagem1.png',
-    './src/assets/images/imagem02.jpg',
+    './src/assets/images/imagem1.jpg',
     './src/assets/images/imagem03.jpg',
+    './src/assets/images/imagem02.jpg',
+    './src/assets/images/imagem04.jpg',
+    './src/assets/images/imagem05.jpg',
+    './src/assets/images/imagem06.jpg',
+    './src/assets/images/imagem07.jpg'
 ];
 
 export default function Carousel() {

@@ -7,7 +7,7 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding-top: 55px;
+  margin-top: 58px;
 }
 
 .carousel-container {
@@ -25,9 +25,8 @@
 .carousel-item img {
   width: 100%;
   height: auto;
-  max-height: 400px;
+  max-height: 500px;
   object-fit: cover;
-  border-radius: 8px;
 }
 
 .carousel-prev, .carousel-next {
@@ -48,9 +47,14 @@
 }
 
 .carousel-next {
-  right: 10px;
+  right: 10px; 
 }
 
 .carousel-prev:hover, .carousel-next:hover {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-prev:focus, .carousel-next:focus{
+  box-shadow: none;
+  outline: none;
 }
