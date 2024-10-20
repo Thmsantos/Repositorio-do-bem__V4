@@ -10,15 +10,16 @@
 
 .left-panel h1, .left-panel p {
     text-align: left; 
+    margin: 0;
 }
 
 .left-panel h1 {
     color: #F3B823;
-    padding-left: 25px;
+    padding-left: 15px; 
 }
 
 .left-panel p {
     font-size: 18px;
-    color:white;
+    color: white;
+    padding-left: 60px; 
 }
-  

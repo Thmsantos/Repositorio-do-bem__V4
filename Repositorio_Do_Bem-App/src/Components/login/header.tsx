@@ -3,8 +3,7 @@ function Header(){
 
     return (
         <div className="header">
-        <a href="#" className="nav-link">home</a>
-        <a href="#" className="nav-link">pontos de coleta</a>
+        <a href="http://localhost:5173/" className="nav-link">Home</a>
     </div>
 
     )
