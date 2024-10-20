@@ -8,7 +8,7 @@ export default function Header() {
     <>
       <div id="header">
           <div id="esquerda">
-              <img id="logoimg" src="./src/assets/images/logo.png" alt="Logo"></img>
+              <img id="logoimg" src="./src/assets/images/logocerta.png" alt="Logo"></img>
               <p>Repositório do bem</p>
           </div>
           <div id="direit">
