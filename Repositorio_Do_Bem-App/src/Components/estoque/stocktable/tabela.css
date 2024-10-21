@@ -13,6 +13,12 @@ table{
     text-align: center;
 }
 
+th{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 th, td{
     color: #ffff;
     padding: 10px;

@@ -10,17 +10,13 @@ export default function Navebar() {
 
   return (
     <>
-      <div id="header">
+      <div className="estoque-header">
         
-          <div id="esquerda">
-          <p 
-          onClick={() => window.location.href = 'http://localhost:5173/home'} // Redireciona ao clicar
-        
-          >
-          pontos de coleta
-        </p>
+          <div className="estoque-header-esquerda">
+          <p className='estoque-header-esquerda-texto' onClick={() => window.location.href = 'http://localhost:5173/home'}>Home</p>
           </div>
-          <div id="direit">
+
+          <div className="estoque-header-direita">
             <img 
             id='logo-header-img'
             src="/src/assets/images/user-estoque.png" 
@@ -28,6 +24,7 @@ export default function Navebar() {
             onClick={() => setModalOpen(true)}
             style={{ cursor: 'pointer' }} />
           </div>
+
       </div>
 
       <ModalUserInfo 
