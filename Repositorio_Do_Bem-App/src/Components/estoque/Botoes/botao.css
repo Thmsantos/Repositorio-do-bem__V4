@@ -1,55 +1,59 @@
-button {
-    background-color: white;
-    color: #3A2E92; /* Cor das letras */   
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.button-container {
+.botoes-estoque-container{
     display: flex;
-    margin-top: 40px; /* Distância da tabela */
-    align-items: center;
-    margin-left: 11%; /* distancia dos botoes */
-}
-
-
-.generate-report {
-    width: 150px; /* largura dos botões */
-    border-radius: 10px; /* Borda arredondada */
-    height: 40px;  /* Altura do botão */
-    font-weight: bold;  /* Negrito */
-    font-size: 15px; /* Tamanho da fonte */
-    background-color: white;
-    cursor: pointer; /* Garantir que a mãozinha apareça */
-    display: flex; /* Para centralizar o texto */
-    align-items: center; /* Centralizar verticalmente */
-    justify-content: center; /* Centralizar horizontalmente */
+    width: 100%;
 
 }
 
-.generate-report:hover{
-    background-color: #f3a323; /* Cor de fundo amarela ao passar o cursor */
 
+.botoes-estoque-container-direita{
+    margin-left: 350px;
 }
 
-.button-group {
-    display: flex; /* Manter os botões lado a lado */
-    justify-content: center; /* Centralizar os botões */
-    gap: 40px; /* Espaço entre os botões */
-    margin-left: 25%; /* Aumente o valor para mover o grupo mais para a direita */
+.botoes-estoque-direita{
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#0D2783;
+    border-radius: 30px;
+    margin: 10px;
+    width: 220px;
+    height: 40px;
+    cursor: pointer;
 }
 
-.button-group button {
-    width: 150px; /* largura dos botões */ /* O botão ocupará 50% da largura da página */
-    height: 40px; /* Altura dos botões */
-    font-size: 15px; /* Tamanho da fonte para os botões */
-    font-weight: bold; /* Negrito */
-    border-radius: 10px; /* Borda arredondada */
-    background-color: white;
-    display: flex; /* Para centralizar o texto */
-    align-items: center; /* Centralizar verticalmente */
-    justify-content: center; /* Centralizar horizontalmente */
-    cursor: pointer; /* Garantir que a mãozinha apareça */
+.botoes-estoque-esquerda{
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#0D2783;
+    border-radius: 30px;
+    margin: 10px;
+    margin-left: 110px;
+    width: 220px;
+    height: 40px;
+    cursor: pointer;
 }
 
-.button-group button:hover {
-    background-color: #F3B823; /* Fundo amarelo para os outros botões ao passar o cursor */
+.botoes-estoque-esquerda:hover{
+    background-color: #0D2783;
+    color: #fff;
+    border: 1px solid #0D2783;
+}
+
+.botoes-estoque-direita:hover{
+    background-color: #0D2783;
+    color: #fff;
+    border: 1px solid #0D2783;
+}
+
+.botoes-estoque-esquerda:focus {
+    outline: none;
+}
+
+.botoes-estoque-direita:focus {
+    outline: none;
 }

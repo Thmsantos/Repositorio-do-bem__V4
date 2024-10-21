@@ -6,6 +6,7 @@ import '/src/Components/estoque/estoque.css'
 import Title from "../Components/estoque/titulo/tituloestoque";
 import Botao from "../Components/estoque/Botoes/botao";
 import Graficos from "../Components/estoque/gráficos/graficos";
+import FooterEstoque from "../Components/estoque/footer/footer";
 
 function Estoque(){
     return(
@@ -20,6 +21,7 @@ function Estoque(){
             <StockTable />
             <Botao />
             <Graficos/>
+            <FooterEstoque/>
 
         
         </div>

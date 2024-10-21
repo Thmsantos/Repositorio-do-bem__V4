@@ -24,8 +24,9 @@
 
 .estoque-header-esquerda-texto{
     font-family: "Poppins", serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
+    color: #F3B823;
 }
 
 .estoque-header-direita{

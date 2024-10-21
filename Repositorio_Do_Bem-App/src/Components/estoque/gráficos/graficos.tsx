@@ -174,10 +174,10 @@ function Graficos() {
  
     return (
         <>
-            <h2>Dashboards</h2>
+            <h2 className='grafico-estoque-titulo'>Dashboards</h2>
             <div className="container-graficos">
                 <div className="grafico-1">
-                <Bar
+                <Bar 
                     data={charData}
                     options={{
                         responsive: true,
@@ -194,7 +194,10 @@ function Graficos() {
                                 text: 'Quantidade de Alimentos', 
                                 color: '#F3B823',
                                 font: {
-                                    size: 15
+                                    size: 15,
+                                    family: 'Poppins',
+                                    style: 'normal',
+                                    weight: 600
                                 }
                             },
                         },
@@ -232,7 +235,10 @@ function Graficos() {
                                     text: 'Porcentagem de Alimentos', 
                                     color: '#F3B823',
                                     font:{
-                                        size: 15
+                                        size: 15,
+                                        family: 'Poppins',
+                                        style: 'normal',
+                                        weight: 600
                                     }
                                 }
                             }
