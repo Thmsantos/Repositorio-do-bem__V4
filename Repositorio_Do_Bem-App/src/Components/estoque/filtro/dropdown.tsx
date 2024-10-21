@@ -13,15 +13,15 @@ function Filtro() {
 
     return (
         <>
-             <div className="dropdown">
+            <div className="dropdown">
             <div className="selecao" onClick= {() => setAbrirMenu(!abrirMenu)}>
                 <span className="selecionado">{selecionado}</span>
                 <div className={`seta ${abrirMenu ? 'seta-rotate' : ''}`}></div>
             </div>
             <ul className={`menu ${abrirMenu ? 'menu-open' : ''}`}>
                 <li  
-                    onClick={() => selecionarOpcao("Verificiar Validade")}>
-                    Verificar Validade
+                    onClick={() => selecionarOpcao("Selecionar validade")}>
+                    Selecionar validade
                 </li>
                 <li  
                     onClick={() => selecionarOpcao("Próxima semana")}>

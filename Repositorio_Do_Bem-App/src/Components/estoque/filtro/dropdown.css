@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .dropdown{
     min-width: 15em;
     position: relative;
@@ -6,11 +8,13 @@
 }
 
 .dropdown *{
-    font-weight: bold;
     box-sizing: border-box;
     height: 3.0em;
     display: flex;
     align-items: center;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .selecao{
@@ -19,11 +23,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px #F3B823 solid;
-    border-radius: 0.5em;
     padding: 1em;
     cursor: pointer;
     transition: background 0.3s;
+    border: none;
+    border-bottom: 1px solid #fff;
 
 }
 
@@ -32,22 +36,20 @@
     box-shadow: 0 0 0.8em #26489a;
 }
 
-.selecao:hover{
-    background: #112468;
-}
 
 .seta{
     width: 0;
     height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 6px solid #fff;
-    transition: 0.3s;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid white;
+    transform: rotate(0deg); 
 }
 
 .seta-rotate{
     transform: rotate(180deg);
 }
+
 
 .menu{
     list-style: none;
@@ -57,7 +59,7 @@
     border-radius: 0.5em;
     color: #ffffff;
     position: absolute;
-    top: 3em;
+    top: 3.5em;
     left: 50%;
     width: 15em;
     height: 14em;
@@ -74,7 +76,7 @@
     cursor: pointer;
 }
 
-menu li:hover{
+.menu li:hover{
     background: #0d2c83;
 }
 

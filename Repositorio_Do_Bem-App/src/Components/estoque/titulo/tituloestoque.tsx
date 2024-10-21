@@ -3,8 +3,8 @@ import './tituloestoque.css'
 function Title(){
     return(
         <>
-        <div className='name'>
-            <h3>Alimentos em Estoque</h3>
+        <div className="estoque-titulo">
+            <h3 className='estoque-titulo-h3'>Alimentos em estoque</h3>
         </div>
         </>
     )

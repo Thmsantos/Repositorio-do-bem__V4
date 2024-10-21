@@ -41,12 +41,12 @@ function BarraDePesquisa({alimentos}: BarraDePesquisaProps){
 
     return(
         <>
-            <div className='div-input'>
-                <img className='img-search' src="/src/assets/images/search (1).png" alt="" />
+            <div className='div-pesquisar-alimento'>
+                <img className='img-search' src="/src/assets/images/lupa.png" alt="" />
                 <input
                  id='searchbar'  
                  type="text" 
-                 className="input" 
+                 className="pesquisar-alimento" 
                  placeholder='Pesquisar alimento...' 
                  onKeyUp={search}
                  />
