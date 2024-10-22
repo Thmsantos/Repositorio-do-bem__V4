@@ -108,3 +108,16 @@
     padding-left: 10px;
     font-family: 'Poppins';
 }
+
+.content> select{
+    background-color: #ffffff;
+    border-radius: 30px;
+    border-style: solid;
+    padding: 5px;
+    width: 90%;
+    color: #000;
+    margin-bottom: 10px;
+    align-items: center;
+    padding-left: 10px;
+    font-family: 'Poppins';
+}
