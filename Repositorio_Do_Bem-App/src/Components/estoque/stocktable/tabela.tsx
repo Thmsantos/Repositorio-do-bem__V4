@@ -26,6 +26,7 @@ function StockTable() {
         fetchAlimentos();
     }, []);
 
+
     function ChangeAliment(alimentoId: string) {
         const alimentoEncontrado = alimentos.find(a => a.alimentoId === alimentoId);
         if (alimentoEncontrado) {
@@ -92,10 +93,10 @@ function StockTable() {
                                 <td>{alimento.peso}</td>
                                 <td>{alimento.validade}</td>
                                 <td>
-                                    <button onClick={() => ChangeAliment(alimento.alimentoId)}>Editar</button>
+                                    <button className='btn-stock' onClick={() => ChangeAliment(alimento.alimentoId)}>Editar</button>
                                 </td>
                                 <td>
-                                    <button onClick={() => {DelAlimento(alimento.alimentoId)}}>Excluir</button>
+                                    <button className='btn-stock' onClick={() => {DelAlimento(alimento.alimentoId)}}>Excluir</button>
                                 </td>
                             </tr>
                         ))}
