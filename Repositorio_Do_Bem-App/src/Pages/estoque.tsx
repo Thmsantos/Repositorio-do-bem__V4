@@ -6,6 +6,7 @@ import '/src/Components/estoque/estoque.css'
 import Title from "../Components/estoque/titulo/tituloestoque";
 import Botao from "../Components/estoque/Botoes/botao";
 import Graficos from "../Components/estoque/gráficos/graficos";
+import FooterEstoque from "../Components/estoque/footer/footer";
 
 function Estoque(){
     return(
@@ -14,12 +15,12 @@ function Estoque(){
             <Navebar />
             <Title/>
             <div className="filter-search">
-                <Filtro/>
                 <BarraDePesquisa/>
             </div>
             <StockTable />
             <Botao />
             <Graficos/>
+            <FooterEstoque/>
 
         
         </div>

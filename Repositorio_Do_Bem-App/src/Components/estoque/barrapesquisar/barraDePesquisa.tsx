@@ -1,10 +1,6 @@
 import './barraDePesquisa.css'
 
-interface BarraDePesquisaProps {
-    alimentos: string[];  
-}
-
-function BarraDePesquisa({alimentos}: BarraDePesquisaProps){
+function BarraDePesquisa(){
 
     function search() {
     let input = (document.getElementById('searchbar')! as HTMLInputElement).value.toLowerCase();
@@ -37,7 +33,6 @@ function BarraDePesquisa({alimentos}: BarraDePesquisaProps){
         }
     }
 }
-
 
     return(
         <>

@@ -1,26 +1,31 @@
 .left-panel {
     width: 400px;
+    font-family: 'Poppins', sans-serif;
     height: 400px;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     padding: 20px;
     margin-right:100px;
 }
-
+ 
 .left-panel h1, .left-panel p {
-    text-align: left; 
+    text-align: left;
 }
-
+ 
 .left-panel h1 {
     color: #F3B823;
     padding-left: 25px;
 }
-
+ 
 .left-panel p {
-    font-size: 18px;
-    margin-top: 20px;
-    max-width: 300px; 
-    margin-bottom: 200px; 
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    max-width: 300px;
+    margin-bottom: 200px;
     color:white;
+    word-spacing: 4px;
+    padding-left: 34px;                      /* Adiciona espaço à esquerda */
+   
 }

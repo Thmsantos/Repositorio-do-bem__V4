@@ -174,10 +174,10 @@ function Graficos() {
  
     return (
         <>
-            <h2>Dashboards</h2>
+            <h2 className='grafico-estoque-titulo'>Dashboards</h2>
             <div className="container-graficos">
                 <div className="grafico-1">
-                <Bar
+                <Bar 
                     data={charData}
                     options={{
                         responsive: true,
@@ -186,27 +186,48 @@ function Graficos() {
                             legend: { 
                                 position: "bottom",
                                 labels: {
-                                    color: 'white' 
+                                    color: 'white' ,
+                                     font:{
+                                            size: 13,
+                                            family: 'Poppins',
+                                            style: 'normal',
+                                            weight: 400  
+                                        }
                                 }
                             },
                             title: {
                                 display: true,
-                                text: 'Quantidade de Alimentos', 
+                                text: 'Quantidade de alimentos', 
                                 color: '#F3B823',
                                 font: {
-                                    size: 15
+                                    size: 15,
+                                    family: 'Poppins',
+                                    style: 'normal',
+                                    weight: 600
                                 }
                             },
                         },
                         scales: {
                             y: {
                                 ticks: {
-                                    color: 'white'
+                                    color: 'white',
+                                     font:{
+                                            size: 13,
+                                            family: 'Poppins',
+                                            style: 'normal',
+                                            weight: 400  
+                                        }
                                 }
                             },
                             x: {
                                 ticks: {
-                                    color: 'white' 
+                                    color: 'white' ,
+                                     font:{
+                                            size: 13,
+                                            family: 'Poppins',
+                                            style: 'normal',
+                                            weight: 400  
+                                        }
                                 }
                             }
                         }
@@ -224,15 +245,24 @@ function Graficos() {
                             plugins: {
                                 legend: { position: "left",
                                     labels: {
-                                        color: 'white' 
+                                        color: 'white', 
+                                        font:{
+                                            size: 13,
+                                            family: 'Poppins',
+                                            style: 'normal',
+                                            weight: 400  
+                                        }
                                     }
                                  },
                                 title: {
                                     display: true,
-                                    text: 'Porcentagem de Alimentos', 
+                                    text: 'Porcentagem de alimentos', 
                                     color: '#F3B823',
                                     font:{
-                                        size: 15
+                                        size: 15,
+                                        family: 'Poppins',
+                                        style: 'normal',
+                                        weight: 600
                                     }
                                 }
                             }

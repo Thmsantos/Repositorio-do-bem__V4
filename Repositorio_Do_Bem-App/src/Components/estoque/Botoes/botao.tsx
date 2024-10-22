@@ -60,12 +60,15 @@ function Botao() {
 
   return (
     <>
-      <div className="button-container">
-        <div> <button className="generate-report" onClick={generatePdf}>Gerar Relatório</button></div>
-        <div className="button-group">
-          <button className="botoes" onClick={openAddModal}>+ Add alimento</button>
-          <button className="botoes" onClick={openDoacaoModal}>- Fazer doação</button>
+      <div className="botoes-estoque-container">
+
+        <div><button className="botoes-estoque-esquerda" onClick={generatePdf}>Gerar relatório</button></div>
+
+        <div className="botoes-estoque-container-direita">
+          <button className="botoes-estoque-direita" onClick={openAddModal}}>+ Add alimento</button>
+          <button className="botoes-estoque-direita" onClick={openDoacaoModal}>- Fazer doação</button>
         </div>
+
       </div>
 
       <ModalProps2 isOpen={isAddModalOpen} setOpen={setIsAddModalOpen} title="Adicionar Novo Alimento">

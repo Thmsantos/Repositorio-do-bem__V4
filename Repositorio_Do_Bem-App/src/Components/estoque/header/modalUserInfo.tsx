@@ -4,7 +4,7 @@ import ModalProps2 from '../../modal_props2/modalProps';
 import { UsuarioData } from '../../../Functions/UserFunctions/Interfaces/UsuarioData';
 import GetUserStatus from '../../../Functions/UserFunctions/GetStatus';
 import EditUser from '../../../Functions/UserFunctions/EditUser';
-import DeleteUser from '../../../Functions/UserFunctions/DeleteUser'; // Assumindo que você tem uma função DeleteUser
+import DeleteUser from '../../../Functions/UserFunctions/DeleteUser'; 
 
 interface ModalUserInfoProps {
   isOpen: boolean;
@@ -15,7 +15,7 @@ interface ModalUserInfoProps {
 
 const ModalUserInfo: FC<ModalUserInfoProps> = ({ isOpen, setOpen, name, cnpj }) => {
   const [isEditOpen, setEditOpen] = useState(false);
-  const [isDeleteOpen, setDeleteOpen] = useState(false); // Estado para controlar o modal de deleção
+  const [isDeleteOpen, setDeleteOpen] = useState(false); 
   const [user, setUser] = useState<UsuarioData>();
   const [cnpjForm, setCnpjForm] = useState<string>("");
   const [email, setEmail] = useState<string>("");

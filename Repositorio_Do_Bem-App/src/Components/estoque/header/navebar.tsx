@@ -1,12 +1,22 @@
 import './navebar.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ModalUserInfo from './modalUserInfo';
-
+import GetUserStatus from '../../../Functions/UserFunctions/GetStatus';
 
 export default function Navebar() {
-  const [modalOpen, setModalOpen] = useState(false);
-  const userName = "Nome Empresa"; 
-  const userCNPJ = "00.000.000/0000-00";
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const [userName, setUserName] = useState<string>("")
+  const [userCnpj, setUserCnpj] = useState<string>("")
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      const userData = await GetUserStatus();
+      setUserName(userData.nomeEmpresa);
+      setUserCnpj(userData.cnpj);
+    };
+
+    fetchUsers();
+  }, []);
 
   return (
     <>
@@ -31,7 +41,7 @@ export default function Navebar() {
         isOpen={modalOpen} 
         setOpen={setModalOpen} 
         name={userName} 
-        cnpj={userCNPJ} 
+        cnpj={userCnpj} 
       />
     </>    
     
