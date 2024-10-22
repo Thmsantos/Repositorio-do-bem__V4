@@ -3,7 +3,7 @@ import GetUsers from '../../Functions/UserFunctions/GetUsers'
 import { useEffect, useState } from 'react';
 import { UsuarioData } from '../../Functions/UserFunctions/Interfaces/UsuarioData';
 
-export default function Coleta(){
+export default function Coleta() {
     const [users, setUsers] = useState<UsuarioData[]>([]);
 
     useEffect(() => {
@@ -15,10 +15,10 @@ export default function Coleta(){
         fetchUsers();
     }, []);
 
-    return(
+    return (
         <>
             <div id="coleta">
-                <h1>Pontos de coleta</h1>
+                <h1>Pontos de Coleta</h1>
             </div>
             <div id="endereco">
                 {users.map((user) => (
