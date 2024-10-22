@@ -5,8 +5,9 @@ body{
 }
 
 .filter-search {
-    margin-top: 5%;
     display: flex; 
+    margin-left: 50%;
+    margin-top: 20px;
     justify-content: space-between;
     align-items: center;         
 }

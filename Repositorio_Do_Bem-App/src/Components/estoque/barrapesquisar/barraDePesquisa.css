@@ -17,7 +17,8 @@
     border-radius: 10px; 
     border: none; 
     padding-left: 20px;   
-    color: #8F8D8D;  
+    color: #8F8D8D;
+    margin-left: 80px  
 }
 
 .pesquisar-alimento::placeholder{

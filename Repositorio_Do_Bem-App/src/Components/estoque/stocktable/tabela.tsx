@@ -5,14 +5,11 @@ import { useEffect, useState } from 'react';
 import ModalProps2 from '../../modal_props2/modalProps';
 import UpdateAlimento from '../../../Functions/stockFunction/UpdateAlimentos';
 import DeleteAlimento from '../../../Functions/stockFunction/DeleteAlimento';
-import BarraDePesquisa from '../barrapesquisar/barraDePesquisa';
 
 function StockTable() {
     const [alimentos, setAlimentos] = useState<AlimentoData[]>([]);
     const [isEditOpen, setEditOpen] = useState(false);
-    const [isDelOpen, setDelOpen] = useState(false);
     const [alimento, setAlimento] = useState<AlimentoData>();
-    const [opcao, setOpcao] = useState<boolean>(false);
     const [nome, setNome] = useState<string>('');
     const [peso, setPeso] = useState<string>('');
     const [data, setData] = useState<string>('');
@@ -79,13 +76,13 @@ function StockTable() {
     return (
         <>
 
-            <div className='divStock'>
-                <table>
-                    <thead>
-                        <th>Alimento</th>
-                        <th>Peso</th>
-                        <th>Validade</th>
-                    </thead>
+            <table>
+                <thead className='headTable'>
+                    <th className='gambiarraAlimento'>Alimento</th>
+                    <th className='gambiarraPeso'>Peso</th>
+                    <th className='gambiarra'>Validade</th>
+                </thead>
+                <div className='divStock'>
                     <tbody>
                         {alimentos.map((alimento) => (
                             <tr key={alimento.alimentoId} className='alimento-row'>
@@ -96,13 +93,13 @@ function StockTable() {
                                     <button className='btn-stock' onClick={() => ChangeAliment(alimento.alimentoId)}>Editar</button>
                                 </td>
                                 <td>
-                                    <button className='btn-stock' onClick={() => {DelAlimento(alimento.alimentoId)}}>Excluir</button>
+                                    <button className='btn-stock' onClick={() => { DelAlimento(alimento.alimentoId) }}>Excluir</button>
                                 </td>
                             </tr>
                         ))}
                     </tbody>
-                </table>
-            </div>
+                </div>
+            </table>
 
             <ModalProps2 isOpen={isEditOpen} setOpen={setEditOpen} title="Editar Alimento">
                 <input

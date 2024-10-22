@@ -7,8 +7,28 @@
     margin-left: 140px;
     margin-bottom: 40px;
     overflow-y: auto;
-    max-height: 550px;
+    max-height: 450px;
     margin-top: 40px;
+}
+
+thead{
+    width: 800px;
+}
+
+thead th {
+    font-size: 23px;
+}
+
+.gambiarra {
+    padding-left: 80px;
+}
+
+.gambiarraPeso{
+    padding-left: 75px;
+}
+
+.gambiarraAlimento{
+    margin-right: 100px;
 }
 
 .alimento-row{
@@ -65,6 +85,10 @@ table{
     border-radius: 30px;
     margin: 20px 100px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -84,6 +108,11 @@ td{
 }
 tbody{
     border-radius: 30px;
+    width: 1000px;
+}
+
+tbody td {
+    width: 1000px;
 }
 tr{
     border: 1px solid #ffff;

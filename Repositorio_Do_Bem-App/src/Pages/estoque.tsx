@@ -15,7 +15,6 @@ function Estoque(){
             <Navebar />
             <Title/>
             <div className="filter-search">
-                <Filtro/>
                 <BarraDePesquisa/>
             </div>
             <StockTable />
