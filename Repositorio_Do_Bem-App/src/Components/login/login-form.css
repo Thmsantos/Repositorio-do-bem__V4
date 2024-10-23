@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     width: 400px;
     height: 470px;
-    border: 1px solid rgba(243, 184, 35, 1);
+    border: 3px solid rgba(243, 184, 35, 1);
     border-radius: 15px; 
     padding: 10px;    
 }
@@ -47,10 +47,19 @@ body {
     font-size: 15px;
 }
 
-.input-box input:focus {
-    background-color: rgba(243, 184, 35, 1);
-    outline: none;
+.input-box input:focus{
+    background-color: #fff;
 }
+.input-box input:hover {
+    background-color: #fff;
+}
+.input-box input:active {
+    background-color: #fff;
+}
+
+
+
+
 
 .input-box img {
     position: absolute;
@@ -67,6 +76,9 @@ body {
     align-items: center;
     width: 100%;
     padding: 40px 0px 40px 0px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .button-login {

@@ -29,6 +29,10 @@
     color: #F3B823;
 }
 
+.estoque-header-esquerda-texto:hover{
+    color: #0D2783;
+}
+
 .estoque-header-direita{
     margin-right: 20px;
 }

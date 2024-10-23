@@ -37,13 +37,15 @@
 .feature .title{
 
     font-size: 30px;
-    font-weight: bold;
     color: #F3B823; 
-    font-family: 'Poppins';
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
+
 .descricao{
-    font-size: 14px;
+    font-size: 15px;
     width: 300px;
     padding-top: 15px;
     padding-left: 10px;
