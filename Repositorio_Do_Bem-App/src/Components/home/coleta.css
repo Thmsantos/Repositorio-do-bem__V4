@@ -6,14 +6,15 @@
     justify-content: center;
     background-color: rgba(13, 39, 131, 1);
     color: #F3B823;
-    font-family: 'Lato' 'Poppins';
+    font-family: 'Poppins', sans-serif;
     padding: 50px;
-  }
+}
 
 #coleta h1{
     margin-top: 90px;
     font-size: 35px;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -23,17 +24,20 @@
     grid-template-columns: repeat(2, 1fr); 
     gap: 20px; 
     margin: 0px 60px 200px 60px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #endereço, h2{
     color:#F3B823;  
     padding-left: 10px;
     padding-top:10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #endereço, p{
     color:white;
     padding-left: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .titulo{
@@ -41,6 +45,9 @@
     width: 100%;
     line-height: 1;
     margin-bottom: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .titulo img{
@@ -56,6 +63,3 @@
     max-width: 100%; 
 }
 
-.ender:hover {
-    background-color: #112468;
-}

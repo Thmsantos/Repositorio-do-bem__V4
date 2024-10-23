@@ -9,17 +9,23 @@
     left: 0;
     width: 100%; /* Garante que o header ocupe toda a largura da página */
     z-index: 1000;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #F3B823;
 }
 
 
 
 .nav-link {
-    color: white;
-    text-decoration: none;
     margin-right: 20px;
     font-size: 18px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #F3B823;
 }
 
 .nav-link:hover {
-    text-decoration: underline;
+    color: #0D2783;
 }

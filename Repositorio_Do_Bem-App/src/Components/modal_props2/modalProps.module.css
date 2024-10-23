@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .background{
     position: fixed;
     top: 0;
@@ -61,31 +62,39 @@
 }
 
 .modal button{
-    background-color: transparent;
-    color:  #F3B823;
+    background-color: #F3B823;
+    color:  #fff;
     width: 200px;
     height: 42px;
     margin-bottom: 1rem;
-    margin-left: 7%;
+    margin-left: 5px;
+    margin-top: 10px;
     letter-spacing: 0.2px;
     font-weight: bold;  
     font-size: 14px;  
+    border-radius: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border: none;
 }
 
 .modal .delete-button:focus {
-    border: none; 
     border: 1px solid white;
     outline: none;
 }
 .modal .cancel-button:focus {
-    border: none; 
     border: 1px solid white;
     outline: none;
 }
 
 .modal button:focus {
-    border: none; 
     outline: none;
+    
+
+}
+.modal button:hover{
+    border:none;
 }
 
 .content{

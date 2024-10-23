@@ -63,7 +63,8 @@
     margin-left: 10%;
     transition: all 0.1s ease;
     letter-spacing: 0.2px;
-    font-weight: bold;     
+    font-weight: bold;    
+    border-radius: 30px; 
 }
 
 .modal button:focus {

@@ -37,14 +37,14 @@
 
 /* Estilo para os links de navegação */
 .nav-link {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
     color: #F3B823;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 400;
 }
  
 /* Efeito hover nos links */
 .nav-link:hover {
     text-decoration: none;
+    color: #0D2783;
 }
